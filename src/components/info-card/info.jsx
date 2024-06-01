@@ -17,7 +17,7 @@ export function InfoCard() {
         <h2 className="title">Sobre Mim</h2>
         <div className="info">
           <img
-            src="/src/images/info/me-dreamWorks.webp"
+            src="../../images/info/me-dreamWorks.webp"
             alt="IA Image about me"
           />
           <div className="info-text">
@@ -33,7 +33,10 @@ export function InfoCard() {
             isOpen={openModal}
             setModalClosed={() => setOpenModal(!openModal)}
           >
-            <p>Em um projeto com tecnologias um pouco mais avançadas, desenvolvi meu próprio portfólio</p>
+            <p>
+              Em um projeto com tecnologias um pouco mais avançadas, desenvolvi
+              meu próprio portfólio
+            </p>
             <iframe
               src="https://pedro-isidoros-portfolio.vercel.app"
               loading="lazy"

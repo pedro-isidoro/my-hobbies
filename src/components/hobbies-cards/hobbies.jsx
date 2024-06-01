@@ -33,7 +33,7 @@ export function HobbiesCards() {
       <div className="slide">
         <div
           className="item"
-          style={{ backgroundImage: "url(./src/images/cards/jiu-jitsu.webp)" }}
+          style={{ backgroundImage: "url(../../images/cards/jiu-jitsu.webp)" }}
         >
           <div className="content">
             <div className="name">JiuJiteiro</div>
@@ -46,7 +46,7 @@ export function HobbiesCards() {
         </div>
         <div
           className="item"
-          style={{ backgroundImage: "url(./src/images/cards/kitchen.webp)" }}
+          style={{ backgroundImage: "url(../../images/cards/kitchen.webp)" }}
         >
           <div className="content">
             <div className="name">Cozinheiro Amador</div>
@@ -63,7 +63,7 @@ export function HobbiesCards() {
         </div>
         <div
           className="item"
-          style={{ backgroundImage: "url(./src/images/cards/music.webp)" }}
+          style={{ backgroundImage: "url(../../images/cards/music.webp)" }}
         >
           <div className="content">
             <div className="name">Músico</div>
@@ -80,7 +80,7 @@ export function HobbiesCards() {
 
         <div
           className="item"
-          style={{ backgroundImage: "url(./src/images/cards/library.webp)" }}
+          style={{ backgroundImage: "url(../../images/cards/library.webp)" }}
         >
           <div className="content">
             <div className="name">Leitor</div>
@@ -96,7 +96,7 @@ export function HobbiesCards() {
         </div>
         <div
           className="item"
-          style={{ backgroundImage: "url(./src/images/cards/movies.webp)" }}
+          style={{ backgroundImage: "url(../../images/cards/movies.webp)" }}
         >
           <div className="content">
             <div className="name">Aspirante á Cinéfilo</div>
@@ -112,7 +112,7 @@ export function HobbiesCards() {
         </div>
         <div
           className="item"
-          style={{ backgroundImage: "url(./src/images/cards/gym.webp)" }}
+          style={{ backgroundImage: "url(../../images/cards/gym.webp)" }}
         >
           <div className="content">
             <div className="name">Rato de Academia</div>
