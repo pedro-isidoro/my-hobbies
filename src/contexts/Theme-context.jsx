@@ -14,6 +14,7 @@ export const themes = {
 
     background_header_footer_color: "#3b757f",
     background_general_color: "#ddeff0",
+    background_modal_color: "#5faab1",
   },
   dark: {
     color: "#B96BB7",
@@ -27,6 +28,7 @@ export const themes = {
 
     background_header_footer_color: "#083764",
     background_general_color: "#18181b",
+    background_modal_color: "#06274b",
   },
   // dark: {
   //   color: "#078cf0",

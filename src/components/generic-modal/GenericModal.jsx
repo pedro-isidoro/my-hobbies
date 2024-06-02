@@ -9,7 +9,7 @@ export function Modal({ isOpen, setModalClosed, children }) {
       <Div
         color={theme.color}
         paragraph_color={theme.paragraph_color}
-        background={theme.background_general_color}
+        background={theme.background_modal_color}
         button={theme.background_header_footer_color}
       >
         <div className="modal-style">
@@ -19,7 +19,7 @@ export function Modal({ isOpen, setModalClosed, children }) {
           <div className="modal-info">
             {children}
             <button className="closedButton" onClick={setModalClosed}>
-                Fechar
+              Fechar
             </button>
           </div>
         </div>
