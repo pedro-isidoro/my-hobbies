@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../../contexts/Theme-context";
 import styled from "styled-components";
-import PhotoMine from "../../../images/music/me-playing-bass.webp";
+import PhotoMine from "/src/images/music/me-playing-bass.webp";
 import { Link } from "react-router-dom";
 import { Button } from "../../generic-button/GenericButton";
 

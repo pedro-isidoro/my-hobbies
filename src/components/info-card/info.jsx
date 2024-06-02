@@ -17,7 +17,7 @@ export function InfoCard() {
         <h2 className="title">Sobre Mim</h2>
         <div className="info">
           <img
-            src="../../images/info/me-dreamWorks.webp"
+            src="/images/info/me-dreamWorks.webp"
             alt="IA Image about me"
           />
           <div className="info-text">

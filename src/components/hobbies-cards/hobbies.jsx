@@ -1,8 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../contexts/Theme-context";
 import { Button } from "../generic-button/GenericButton";
 import { CardsSection } from "./hobbie.style";
 import { Link } from "react-router-dom";
+import hobbieData from "/src/json/hobbies-card.json";
 
 export function HobbiesCards() {
   //Avançar para o próximo slide
@@ -21,6 +22,12 @@ export function HobbiesCards() {
   //Usando desestruturação para chamar o tema e suas caracteristicas
   const { theme } = useContext(ThemeContext);
 
+  const [hobbiesCards, sethobbiesCards] = useState([]);
+
+  useEffect(() => {
+    sethobbiesCards(hobbieData);
+  }, []);
+
   return (
     <CardsSection
       color={theme.color}
@@ -30,6 +37,26 @@ export function HobbiesCards() {
       dark_color={theme.dark_color}
       shadow_color={theme.box_shadow_color}
     >
+      <ul className="slide">
+        {hobbiesCards.map((hobbiesCard, index) => (
+          <li
+            key={index}
+            className="item"
+            style={{
+              backgroundImage: hobbiesCard.url,
+            }}
+          >
+            <div className="content">
+              <div className="name">{hobbiesCard.name}</div>
+              <div className="des">{hobbiesCard.description}</div>
+              <Link to={hobbiesCard.link}>
+                <Button>More info</Button>
+              </Link>
+            </div>
+          </li>
+        ))}
+      </ul>
+      {/*
       <div className="slide">
         <div
           className="item"
@@ -124,6 +151,7 @@ export function HobbiesCards() {
           </div>
         </div>
       </div>
+      */}
       <div className="button">
         <Button className="prev" onClick={prevCard}>
           <i className="fa-solid fa-arrow-left-long" onClick={prevCard}></i>
