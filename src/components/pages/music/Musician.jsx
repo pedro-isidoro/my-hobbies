@@ -18,15 +18,15 @@ export function Musician() {
       <img src={PhotoMine} alt="Foto minha" />
       <ul className="musicSkills">
         <li className="musicSkill">
-          <i class="fa-solid fa-guitar"></i>
+          <i className="fa-solid fa-guitar"></i>
           <p>Sou um Bassist, ou mais conhecido como Baixista.</p>
         </li>
         <li className="musicSkill">
-          <i class="fa-solid fa-microphone"></i>
+          <i className="fa-solid fa-microphone"></i>
           <p>Além de músico, também sou cantor.</p>
         </li>
         <li className="musicSkill">
-          <i class="fa-solid fa-sliders"></i>
+          <i className="fa-solid fa-sliders"></i>
           <p>E tenho conhecimento básico de mixagem de som.</p>
         </li>
       </ul>
@@ -74,7 +74,8 @@ const MusicSection = styled.section`
 
   & .musicSkills .musicSkill i {
     padding: 2rem;
-    background-color: lightblue;
+    color: ${(props) => props.paragraph_color};
+    background-color: ${(props) => props.button};
     border-radius: 50%;
     margin-bottom: 2rem;
   }

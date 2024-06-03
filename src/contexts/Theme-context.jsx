@@ -14,7 +14,7 @@ export const themes = {
 
     background_header_footer_color: "#3b757f",
     background_general_color: "#ddeff0",
-    background_modal_color: "#5faab1",
+    background_modal_color: "#2d464c90",
   },
   dark: {
     color: "#B96BB7",
@@ -28,7 +28,7 @@ export const themes = {
 
     background_header_footer_color: "#083764",
     background_general_color: "#18181b",
-    background_modal_color: "#06274b",
+    background_modal_color: "#06274b90",
   },
   // dark: {
   //   color: "#078cf0",
@@ -48,7 +48,7 @@ export const ThemeContext = createContext({});
 
 export const ThemeProvider = (props) => {
   //Setando um thema padrão, e um estado para alterá-lo
-  const [ theme, setTheme ] = useState(themes.light);
+  const [ theme, setTheme ] = useState(themes.dark);
 
   //criando um provedor, para passar os themas como props a todos os filhos
   return (

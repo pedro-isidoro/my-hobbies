@@ -49,7 +49,7 @@ export function HobbiesCards() {
             <div className="content">
               <div className="name">{hobbiesCard.name}</div>
               <div className="des">{hobbiesCard.description}</div>
-              <Link to={hobbiesCard.link}>
+              <Link to={hobbiesCard.link} className={hobbiesCard.className}>
                 <Button>More info</Button>
               </Link>
             </div>

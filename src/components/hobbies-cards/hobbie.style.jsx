@@ -10,7 +10,7 @@ export const CardsSection = styled.section`
   @keyframes show {
     from {
       transform: scale(0);
-      opacity: 0.5;
+      opacity: 0.4;
     }
     to {
       transform: scale(1);
@@ -62,6 +62,10 @@ export const CardsSection = styled.section`
 
   & .slide .item:nth-child(2) {
     left: calc(60% + 7.5rem);
+  }
+
+  & .item .content .not-exist{
+    display: none;
   }
 
   & .item .content {

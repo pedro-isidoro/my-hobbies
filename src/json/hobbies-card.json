@@ -3,7 +3,8 @@
         "url": "url(/images/cards/jiu-jitsu.webp)",
         "name": "JiuJiteiro",
         "description": "Dos meus 12 aos 16 anos, pratiquei uma das lutas que mais amo até os dias de hoje. Infelizmente em 2020, por conta da pandemia tive que parar, e até então não consegui voltar a treinar.",
-        "link": "/"
+        "link": "/",
+        "className": "not-exist"
     },
     {
         "url": "url(/images/cards/kitchen.webp)",
@@ -33,6 +34,7 @@
         "url": "url(/images/cards/gym.webp)",
         "name": "Rato de Academia",
         "description": "No final de 2022, com 19 anos, após treinos de calistenia em casa, achei a mim mesmo na musculação, e até hoje mantenho uma rotina árdua de treinos e desenvolvimento.",
-        "link": "/"
+        "link": "/",
+        "className": "not-exist"
     }
 ]

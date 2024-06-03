@@ -18,9 +18,9 @@ export function Modal({ isOpen, setModalClosed, children }) {
           </div>
           <div className="modal-info">
             {children}
-            <button className="closedButton" onClick={setModalClosed}>
+            {/* <button className="closedButton" onClick={setModalClosed}>
               Fechar
-            </button>
+            </button> */}
           </div>
         </div>
       </Div>
@@ -50,16 +50,17 @@ const Div = styled.div`
     font-size: 2rem;
     border-radius: 1rem;
     background-color: ${(props) => props.background};
+    backdrop-filter: blur(0.5rem);
   }
 
   & .modal-style .close-modal i {
     font-size: 2rem;
-    color: ${(props) => props.color};
+    color: ${(props) => props.paragraph_color};
   }
 
   & .modal-style .close-modal i:hover {
     cursor: pointer;
-    color: #ababab;
+    color: #8f8e8e;
     transform: scale(1.5);
   }
 
@@ -75,7 +76,7 @@ const Div = styled.div`
 
   & .modal-style .modal-info iframe {
     width: 90%;
-    height: 40rem;
+    height: 50rem;
     border: 0.1rem solid black;
     border-radius: 1rem;
   }
