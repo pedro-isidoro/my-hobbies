@@ -29,19 +29,7 @@ export const themes = {
     background_header_footer_color: "#083764",
     background_general_color: "#18181b",
     background_modal_color: "#06274b90",
-  },
-  // dark: {
-  //   color: "#078cf0",
-  //   dark_color: "#6bacea",
-  //   theme_color: "#B96BB7",
-  //   paragraph_color: "#B96BB7",
-  //   icon_hover_color: "#62B0F8",
-  //   background_header_footer_color: "#18181b",
-  //   background_general_color: "#083764",
-  // },
-  // yellow: {
-  //   color: "#daef16",
-  // },
+  }
 };
 
 export const ThemeContext = createContext({});
