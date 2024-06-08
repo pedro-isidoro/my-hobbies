@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import { Button } from "../../generic-button/GenericButton";
 
 import MoviesAndSeriesCard from "../../movie-theater-card/moviesAndSeriesCard";
-import { useMovies } from "../../movie-theater-card/axiosMovieRequest";
+import { useMoviesAndSeries } from "../../../hook/MovieAndSerieRequest";
 
 
 export function MoviesAndSeries() {
   const { theme } = useContext(ThemeContext);
 
-  let movies1 = useMovies(8302788, 1).dataList;
-  let series1 = useMovies(8302789, 1).dataList;
+  let movies1 = useMoviesAndSeries(8302788, 1).dataList;
+  let series1 = useMoviesAndSeries(8302789, 1).dataList;
   // console.log(movies1);
   // console.log(series1);
 

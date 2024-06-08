@@ -3,7 +3,7 @@ import axios from "axios";
 
 const moviesURL = import.meta.env.VITE_API;
 
-export const useMovies = (list_id, number_page) => {
+export const useMoviesAndSeries = (list_id, number_page) => {
   const [dataList, setDataList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
