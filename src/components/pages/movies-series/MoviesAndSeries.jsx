@@ -1,11 +1,20 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../../contexts/Theme-context";
 import { CinephiliaSection } from "./MoviesAndSeries.style";
 import { Link } from "react-router-dom";
 import { Button } from "../../generic-button/GenericButton";
 
+import MoviesAndSeriesCard from "../../movie-theater-card/moviesAndSeriesCard";
+import { useMovies } from "../../movie-theater-card/axiosMovieRequest";
+
+
 export function MoviesAndSeries() {
   const { theme } = useContext(ThemeContext);
+
+  let movies1 = useMovies(8302788, 1).dataList;
+  let series1 = useMovies(8302789, 1).dataList;
+  // console.log(movies1);
+  // console.log(series1);
 
   return (
     <CinephiliaSection
@@ -16,11 +25,27 @@ export function MoviesAndSeries() {
     >
       <div className="viewedMovies">
         <h3>Filmes</h3>
-        <p>XXXXXXXXXXXXXXXX</p>
+        <div>
+          {movies1.length > 0 ? (
+            movies1.map((movie) => (
+              <MoviesAndSeriesCard key={movie.id} movie={movie} />
+            ))
+          ) : (
+            <p>Carregando...</p>
+          )}
+        </div>
       </div>
       <div className="viewedSeries">
         <h3>Séries</h3>
-        <p>XXXXXXXXXXXXXXXX</p>
+        <div>
+          {series1.length > 0 ? (
+            series1.map((serie) => (
+              <MoviesAndSeriesCard key={serie.id} movie={serie} />
+            ))
+          ) : (
+            <p>Carregando...</p>
+          )}
+        </div>
       </div>
       <Link to="/">
         <Button>Home Page</Button>

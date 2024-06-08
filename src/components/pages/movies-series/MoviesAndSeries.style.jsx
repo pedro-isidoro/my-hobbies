@@ -37,6 +37,16 @@ export const CinephiliaSection = styled.section`
     font-size: 1.6rem;
   }
 
+  & .viewedMovies div {
+    display: flex;
+  }
+
+  & .viewedMovies div img,
+  .viewedSeries div img {
+    width: 3rem;
+    height: 5rem;
+  }
+
   & Button {
     width: 12rem;
   }
