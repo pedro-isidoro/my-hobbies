@@ -19,7 +19,7 @@ const MovieCard = ({movie}) => {
         <img src={imageUrl + movie.poster_path} alt={movie.title} />
         <h3>{movie.title}</h3>
       </div>
-      <div className="newMoreInfomovie">
+      <div className="newMoreInfo">
         <p>Para mais Informações</p>
         <Button>Click!</Button>
       </div>

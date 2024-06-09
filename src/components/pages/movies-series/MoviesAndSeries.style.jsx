@@ -79,6 +79,10 @@ export const CinephiliaSection = styled.section`
     gap: 2rem;
   }
 
+  & .viewedAnimations .animation-slider .card {
+    height: 93%;
+  }
+
   & .movie-card,
   .serie-card,
   .animation-card {
@@ -94,11 +98,9 @@ export const CinephiliaSection = styled.section`
     /* background-color: lightcoral; */
   }
 
-  & .movie-card .newMoreInfomovie {
-    display: none;
-  }
-
-  & .movie-card .newMoreInfomovie.active {
+  & .movie-card .newMoreInfo,
+  .serie-card .newMoreInfo,
+  .animation-card .newMoreInfo {
     position: absolute;
     width: 90%;
     height: 14rem;
@@ -108,18 +110,35 @@ export const CinephiliaSection = styled.section`
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    transition: 0.5s ease-in-out;
     background-color: ${(props) => props.color};
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
   }
 
-  & .movie-card .newMoreInfomovie.active p,
-  .movie-card .newMoreInfomovie.active Button {
+  & .animation-card .newMoreInfo {
+    height: 16rem;
+  }
+
+  & .movie-card .newMoreInfo p,
+  .serie-card .newMoreInfo p,
+  .animation-card .newMoreInfo p,
+  .movie-card .newMoreInfo Button,
+  .serie-card .newMoreInfo Button,
+  .animation-card .newMoreInfo Button {
     color: white;
   }
 
-  & .movie-card .newMoreInfomovie.active Button {
+  & .movie-card .newMoreInfo Button,
+  .serie-card .newMoreInfo Button,
+  .animation-card .newMoreInfo Button {
     height: 3rem;
     width: 60%;
+  }
+
+  & .movie-card:hover .newMoreInfo,
+  .serie-card:hover .newMoreInfo,
+  .animation-card:hover .newMoreInfo {
+    transform: translateY(0);
   }
 
   & .movie-card img,

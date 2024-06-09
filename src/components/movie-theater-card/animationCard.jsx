@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../../contexts/Theme-context';
+import { Button } from '../generic-button/GenericButton';
 
 const imageUrl = import.meta.env.VITE_IMG
 
@@ -13,8 +14,14 @@ const AnimationCard = ({ animation }) => {
       paragraph_color={theme.paragraph_color}
       button={theme.background_header_footer_color}
     >
-      <img src={imageUrl + animation.poster_path} alt={animation.title} />
-      <h3>{animation.title}</h3>
+      <div className="poster">
+        <img src={imageUrl + animation.poster_path} alt={animation.title} />
+        <h3>{animation.title}</h3>
+      </div>
+      <div className="newMoreInfo">
+        <p>Para mais Informações</p>
+        <Button>Click!</Button>
+      </div>
       {/* <p>
         <i className="fa-solid fa-star"></i>
         {movie.vote_average}
