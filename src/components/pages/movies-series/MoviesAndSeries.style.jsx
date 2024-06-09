@@ -39,6 +39,7 @@ export const CinephiliaSection = styled.section`
     align-items: center;
     gap: 3rem;
     width: 100%;
+    height: 100%;
   }
 
   & .viewedMovies .movie-slider Button,
@@ -69,8 +70,8 @@ export const CinephiliaSection = styled.section`
   .viewedSeries .serie-slider .card,
   .viewedAnimations .animation-slider .card {
     width: 100%;
-    height: 100%;
-    padding: 1rem .5rem;
+    height: 87%;
+    padding: 0 0.5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -84,17 +85,47 @@ export const CinephiliaSection = styled.section`
     width: 22rem;
     height: 100%;
     padding: 1rem;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    /* background-color: lightcoral; */
+  }
+
+  & .movie-card .newMoreInfomovie {
+    display: none;
+  }
+
+  & .movie-card .newMoreInfomovie.active {
+    position: absolute;
+    width: 90%;
+    height: 14rem;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: 0.5s ease-in-out;
+    background-color: ${(props) => props.color};
+  }
+
+  & .movie-card .newMoreInfomovie.active p,
+  .movie-card .newMoreInfomovie.active Button {
+    color: white;
+  }
+
+  & .movie-card .newMoreInfomovie.active Button {
+    height: 3rem;
+    width: 60%;
   }
 
   & .movie-card img,
   .serie-card img,
   .animation-card img {
-    width: 18rem;
+    width: 18.5rem;
     margin-bottom: 0.8rem;
   }
 
@@ -102,14 +133,13 @@ export const CinephiliaSection = styled.section`
   .serie-card h3,
   .animation-card h3 {
     font-size: 1.9rem;
-    color: white;
+    color: ${(props) => props.color};
   }
 
   & .movie-card p,
   .serie-card p,
   .animation-card p {
     font-size: 1.7rem;
-    /* background-color: lightblue; */
     gap: 0.3rem;
     display: flex;
     align-items: center;
