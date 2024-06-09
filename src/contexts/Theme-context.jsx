@@ -15,6 +15,7 @@ export const themes = {
     background_header_footer_color: "#3b757f",
     background_general_color: "#ddeff0",
     background_modal_color: "#2d464c90",
+    cooking_iframe_box_shadow: "rgba(0, 0, 0, 0.671)",
   },
   dark: {
     color: "#B96BB7",
@@ -29,7 +30,8 @@ export const themes = {
     background_header_footer_color: "#083764",
     background_general_color: "#18181b",
     background_modal_color: "#06274b90",
-  }
+    cooking_iframe_box_shadow: "rgba(204, 197, 197, 0.28)",
+  },
 };
 
 export const ThemeContext = createContext({});

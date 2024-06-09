@@ -9,6 +9,7 @@
 - Vite
 - Styled Components
 - React Router Dom
+- TMDB - Filmes e Séries
 
 ### Desafios
     1 - Integrar o Styled Components e useContext

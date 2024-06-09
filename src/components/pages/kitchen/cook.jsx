@@ -13,6 +13,7 @@ export function Cook() {
       background={theme.background_general_color}
       paragraph_color={theme.paragraph_color}
       button={theme.background_header_footer_color}
+      box_shadow={theme.cooking_iframe_box_shadow}
     >
       <div className="cookSkill">
         <p>Um site que desenvolvi para usar como "Caderno de Receitas"</p>
@@ -30,25 +31,32 @@ export function Cook() {
 
 const CookSection = styled.section`
   width: 100%;
-  height: 82svb;
-  background-color: ${(props) => props.background};
+  height: auto;
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  gap: 4rem;
   text-align: center;
+  background-color: ${(props) => props.background};
 
+  & .cookSkill{
+    width: 80%;
+  } 
+  
   & .cookSkill p {
     color: ${(props) => props.color};
-    margin-bottom: 2rem;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
   }
-  
+
   & .cookSkill iframe {
-    width: 70rem;
+    width: 100%;
     height: 50rem;
     border: none;
     border-radius: 1rem;
+    box-shadow: 10px 10px 6px 0px ${(props) => props.box_shadow};
   }
 
   & Button {

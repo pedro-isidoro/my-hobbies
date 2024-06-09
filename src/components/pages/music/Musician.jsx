@@ -39,28 +39,31 @@ export function Musician() {
 
 const MusicSection = styled.section`
   width: 100%;
-  height: 82svb;
+  height: auto;
+  padding: 4rem 0;
   background-color: ${(props) => props.background};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 4rem;
 
   & img {
-    width: 25%;
+    width: 40rem;
     border-radius: 2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 
   & .musicSkills {
-    width: 80%;
+    width: 100%;
     height: 30%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
   & .musicSkills .musicSkill {
-    width: 35%;
+    width: 40rem;
     height: 100%;
     text-align: center;
     padding: 2rem;
