@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const CardsSection = styled.section`
   position: relative;
-  width: 85%;
+  width: 100%;
   height: 60rem;
-  background-color: transparent;
   animation: show 6s ease-in-out both;
 
   @keyframes show {
@@ -21,50 +20,49 @@ export const CardsSection = styled.section`
   & .slide .item {
     width: 12rem;
     height: 8rem;
-    position: absolute;
     top: 90%;
-    transform: translate(226%, -50%);
     border-radius: 2rem;
     border: 0.2rem solid #000;
     background-position: 50% 50%;
     background-size: cover;
-    display: inline-block;
+    transform: translate(226%, -50%);
     transition: 0.5s;
+    position: absolute;
+    display: inline-block;
   }
 
   & .slide .item:nth-child(1) {
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 10%;
+    width: 80%;
     height: 100%;
     transform: translate(0, 0);
     border-radius: 2rem;
     border: none;
-    /* box-shadow: 0.6rem 0.7rem 0.5rem #ada3a3; */
     box-shadow: 0.6rem 0.7rem 0.5rem ${(props) => props.shadow_color};
   }
 
   & .slide .item:nth-child(6) {
-    left: calc(60% + 1.5rem);
+    right: 33%;
   }
 
   & .slide .item:nth-child(5) {
-    left: calc(60% + 3rem);
+    right: 32%;
   }
 
   & .slide .item:nth-child(4) {
-    left: calc(60% + 4.5rem);
+    right: 31%;
   }
 
   & .slide .item:nth-child(3) {
-    left: calc(60% + 6rem);
+    right: 30%;
   }
 
   & .slide .item:nth-child(2) {
-    left: calc(60% + 7.5rem);
+    right: 29%;
   }
 
-  & .item .content .not-exist{
+  & .item .content .not-exist {
     display: none;
   }
 
@@ -142,5 +140,183 @@ export const CardsSection = styled.section`
 
   & .button button i {
     font-size: 1.4rem;
+  }
+
+  @media (max-width: 1921px) {
+    & .slide .item:nth-child(6) {
+      right: 29%;
+    }
+
+    & .slide .item:nth-child(5) {
+      right: 28%;
+    }
+
+    & .slide .item:nth-child(4) {
+      right: 27%;
+    }
+
+    & .slide .item:nth-child(3) {
+      right: 26%;
+    }
+
+    & .slide .item:nth-child(2) {
+      right: 25%;
+    }
+  }
+
+  @media (max-width: 1536px) {
+    & .slide .item:nth-child(6) {
+      right: 33%;
+    }
+
+    & .slide .item:nth-child(5) {
+      right: 32%;
+    }
+
+    & .slide .item:nth-child(4) {
+      right: 31%;
+    }
+
+    & .slide .item:nth-child(3) {
+      right: 30%;
+    }
+
+    & .slide .item:nth-child(2) {
+      right: 29%;
+    }
+  }
+
+  @media (max-width: 1441px) {
+    & .slide .item:nth-child(6) {
+      right: 38%;
+    }
+
+    & .slide .item:nth-child(5) {
+      right: 37%;
+    }
+
+    & .slide .item:nth-child(4) {
+      right: 36%;
+    }
+
+    & .slide .item:nth-child(3) {
+      right: 35%;
+    }
+
+    & .slide .item:nth-child(2) {
+      right: 34%;
+    }
+  }
+
+  @media (max-width: 1171px) {
+    & .slide .item:nth-child(6) {
+      right: 46%;
+    }
+
+    & .slide .item:nth-child(5) {
+      right: 45%;
+    }
+
+    & .slide .item:nth-child(4) {
+      right: 44%;
+    }
+
+    & .slide .item:nth-child(3) {
+      right: 43%;
+    }
+
+    & .slide .item:nth-child(2) {
+      right: 42%;
+    }
+  }
+
+  @media (max-width: 881px) {
+    & .slide .item {
+      width: 8rem;
+      height: 6rem;
+      top: 94%;
+    }
+
+    & .slide .item:nth-child(6) {
+      left: -8%;
+    }
+
+    & .slide .item:nth-child(5) {
+      left: -7%;
+    }
+
+    & .slide .item:nth-child(4) {
+      left: -6%;
+    }
+
+    & .slide .item:nth-child(3) {
+      left: -5%;
+    }
+
+    & .slide .item:nth-child(2) {
+      left: -4%;
+    }
+  }
+
+  @media (max-width: 761px) {
+    & .slide .item:nth-child(6) {
+      left: -16%;
+    }
+
+    & .slide .item:nth-child(5) {
+      left: -15%;
+    }
+
+    & .slide .item:nth-child(4) {
+      left: -14%;
+    }
+
+    & .slide .item:nth-child(3) {
+      left: -13%;
+    }
+
+    & .slide .item:nth-child(2) {
+      left: -12%;
+    }
+
+    & .button {
+      bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 501px) {
+    & .item .content {
+      width: 80%;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    & .slide .item:nth-child(6) {
+      left: -8%;
+    }
+
+    & .slide .item:nth-child(5) {
+      left: -7%;
+    }
+
+    & .slide .item:nth-child(4) {
+      left: -6%;
+    }
+
+    & .slide .item:nth-child(3) {
+      left: -5%;
+    }
+
+    & .slide .item:nth-child(2) {
+      left: -4%;
+    }
+
+    & .button {
+      bottom: 2rem;
+    }
+
+    & .button {
+      bottom: 8rem;
+    }
   }
 `;

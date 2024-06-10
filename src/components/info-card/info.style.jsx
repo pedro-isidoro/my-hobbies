@@ -70,4 +70,22 @@ export const InfoSection = styled.section`
     color: #fff;
     border-color: #fff;
   }
+
+  @media (max-width: 601px) {
+    & .info img {
+      width: 33rem;
+      height: 32rem;
+    }
+  }
+
+  @media (max-width: 501px) {
+    & .info img {
+      width: 27rem;
+      height: 26rem;
+    }
+
+    & .info .info-text {
+      width: 36rem;
+    }
+  }
 `;
