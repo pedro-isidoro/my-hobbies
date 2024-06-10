@@ -86,4 +86,17 @@ const MusicSection = styled.section`
   & Button {
     width: 12rem;
   }
+
+  @media (max-width: 500px) {
+    & img {
+      width: 30rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  @media (max-width: 350px) {
+    & img {
+      width: 25rem;
+    }
+  }
 `;

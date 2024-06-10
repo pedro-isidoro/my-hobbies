@@ -40,4 +40,21 @@ export const Whatsapp = styled.section`
     margin: 0.8rem 0 0 0.2rem;
     font-size: 3.3rem;
   }
+
+  @media (max-width: 417px) {
+    & a {
+      width: 3.5rem;
+      height: 3.5rem;
+      bottom: 2.8rem;
+      right: 2rem;
+
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    & a i {
+      margin: 0.6rem 0 0 0.1rem;
+      font-size: 2.5rem;
+    }
+  }
 `;

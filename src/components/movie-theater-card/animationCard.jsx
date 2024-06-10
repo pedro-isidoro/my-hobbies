@@ -30,12 +30,12 @@ const AnimationCard = ({ animation }) => {
       >
         <div className="animation-modal">
           <h3>
-            {animation.title} - {animation.release_date}
+            {animation.title} <br /> {animation.release_date}
           </h3>
           <img src={imageUrl + animation.poster_path} alt={animation.title} />
           <div className="description">
             <h4>
-              Avaliação Média<i className="fa-solid fa-star"></i>
+              Avaliação Média -<i className="fa-solid fa-star"></i>
               {animation.vote_average}
             </h4>
             <div className="sinopse">

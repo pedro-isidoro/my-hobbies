@@ -11,6 +11,8 @@ export function Modal({ isOpen, setModalClosed, children }) {
         paragraph_color={theme.paragraph_color}
         background={theme.background_modal_color}
         button={theme.background_header_footer_color}
+        icon_color={theme.icon_color}
+        icon_hover_color={theme.icon_hover_color}
       >
         <div className="modal-style">
           <div onClick={setModalClosed} className="close-modal">
@@ -53,14 +55,18 @@ const Div = styled.div`
     backdrop-filter: blur(0.5rem);
   }
 
+  & .modal-style .close-modal {
+    display: flex;
+  }
+
   & .modal-style .close-modal i {
     font-size: 2rem;
-    color: ${(props) => props.paragraph_color};
+    color: ${(props) => props.icon_hover_color};
   }
 
   & .modal-style .close-modal i:hover {
     cursor: pointer;
-    color: #8f8e8e;
+    color: ${(props) => props.icon_color};
     transform: scale(1.5);
   }
 

@@ -30,12 +30,12 @@ const SerieCard = ({serie}) => {
       >
         <div className="serie-modal">
           <h3>
-            {serie.name} - {serie.first_air_date}
+            {serie.name} <br /> {serie.first_air_date}
           </h3>
           <img src={imageUrl + serie.poster_path} alt={serie.name} />
           <div className="description">
             <h4>
-              Avaliação Média<i className="fa-solid fa-star"></i>
+              Avaliação Média -<i className="fa-solid fa-star"></i>
               {serie.vote_average}
             </h4>
             <div className="sinopse">

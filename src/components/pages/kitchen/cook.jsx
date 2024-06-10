@@ -41,10 +41,10 @@ const CookSection = styled.section`
   text-align: center;
   background-color: ${(props) => props.background};
 
-  & .cookSkill{
+  & .cookSkill {
     width: 80%;
-  } 
-  
+  }
+
   & .cookSkill p {
     color: ${(props) => props.color};
     font-size: 2.4rem;
@@ -53,7 +53,7 @@ const CookSection = styled.section`
 
   & .cookSkill iframe {
     width: 100%;
-    height: 50rem;
+    height: 80rem;
     border: none;
     border-radius: 1rem;
     box-shadow: 10px 10px 6px 0px ${(props) => props.box_shadow};
@@ -61,5 +61,18 @@ const CookSection = styled.section`
 
   & Button {
     width: 12rem;
+  }
+
+  @media (max-width: 417px) {
+    & .cookSkill {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 370px) {
+    & .cookSkill p {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+    }
   }
 `;

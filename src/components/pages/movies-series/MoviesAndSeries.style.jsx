@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const CinephiliaSection = styled.section`
   width: 100%;
-  height: 210svb;
+  height: auto;
+  padding: 4rem 0;
   background-color: ${(props) => props.background};
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
+  gap: 4rem;
 
   & .viewedMovies,
   .viewedSeries,
@@ -197,10 +198,11 @@ export const CinephiliaSection = styled.section`
     gap: 2rem;
   }
 
-  & .movie-card .movie-modal .description h3,
-  .serie-card .serie-modal .description h3,
-  .animation-card .animation-modal .description h3 {
-    font-size: 2.4rem;
+  & .movie-card .movie-modal h3,
+  .serie-card .serie-modal h3,
+  .animation-card .animation-modal h3 {
+    font-size: 2rem;
+    color: ${(props) => props.paragraph_color};
   }
 
   & .movie-card .movie-modal .description h4,
@@ -209,7 +211,7 @@ export const CinephiliaSection = styled.section`
   .movie-card .movie-modal .description h4 i,
   .serie-card .serie-modal .description h4 i,
   .animation-card .animation-modal .description h4 i {
-    color: white;
+    color: ${(props) => props.paragraph_color};
     font-size: 1.6rem;
     height: 2rem;
     text-align: center;
@@ -240,17 +242,44 @@ export const CinephiliaSection = styled.section`
 
   & .movie-card .movie-modal .description .sinopse::-webkit-scrollbar-thumb,
   .serie-card .serie-modal .description .sinopse::-webkit-scrollbar-thumb,
-  .animation-card .animation-modal .description .sinopse::-webkit-scrollbar-thumb {
+  .animation-card
+    .animation-modal
+    .description
+    .sinopse::-webkit-scrollbar-thumb {
     border-radius: 1rem;
-    background-color: ${(props) => props.color};
+    background-color: ${(props) => props.paragraph_color};
   }
 
   & .movie-card .movie-modal .description .sinopse p,
   .serie-card .serie-modal .description .sinopse p,
   .animation-card .animation-modal .description .sinopse p {
     width: 100%;
+    color: ${(props) => props.paragraph_color};
     padding: 0 1rem;
     font-size: 1.9rem;
     text-align: justify;
+  }
+
+  @media (max-width: 417px) {
+    & .viewedMovies,
+    .viewedSeries,
+    .viewedAnimations {
+      height: 38rem;
+    }
+
+    & .movie-card img,
+    .serie-card img,
+    .animation-card img {
+      width: 14.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    & .movie-card .movie-modal .description .sinopse,
+    .serie-card .serie-modal .description .sinopse,
+    .animation-card .animation-modal .description .sinopse {
+      height: 12rem;
+      width: 90%;
+      overflow-y: auto;
+    }
   }
 `;

@@ -29,17 +29,17 @@ const MovieCard = ({movie}) => {
         setModalClosed={() => setOpenMovieModal(!openMovieModal)}
       >
         <div className="movie-modal">
-          <h3>{movie.title} - {movie.release_date}</h3>
+          <h3>
+            {movie.title} <br /> {movie.release_date}
+          </h3>
           <img src={imageUrl + movie.poster_path} alt={movie.title} />
           <div className="description">
             <h4>
-              Avaliação Média<i className="fa-solid fa-star"></i>
+              Avaliação Média -<i className="fa-solid fa-star"></i>
               {movie.vote_average}
             </h4>
             <div className="sinopse">
-              <p>
-                {movie.overview}
-              </p>
+              <p>{movie.overview}</p>
             </div>
           </div>
         </div>
