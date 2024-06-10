@@ -337,7 +337,7 @@ export const CardsSection = styled.section`
     }
 
     & .slide .item {
-      transform: translate(70%, -30%);
+      transform: translate(60%, -30%);
     }
 
     & .slide .item:nth-child(6) {
@@ -403,8 +403,12 @@ export const CardsSection = styled.section`
       left: -10%;
     }
   }
-  
+
   @media (max-width: 376px) {
+    & .slide .item {
+      transform: translate(50%, -30%);
+    }
+
     & .slide .item:nth-child(6) {
       left: -3%;
     }

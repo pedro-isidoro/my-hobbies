@@ -317,7 +317,7 @@ export const CinephiliaSection = styled.section`
       width: 17.5rem;
     }
   }
-  
+
   @media (max-width: 361px) {
     & .movie-card img,
     .serie-card img,
@@ -332,8 +332,38 @@ export const CinephiliaSection = styled.section`
     .animation-card img {
       width: 15rem;
     }
+    & .viewedMovies,
+    .viewedSeries,
+    .viewedAnimations {
+      background-color: red;
+    }
+
+    & .movie-card,
+    .serie-card,
+    .animation-card {
+      background-color: blue;
+    }
   }
   
+  @media (max-width: 335px) {
+    & .movie-card img,
+    .serie-card img,
+    .animation-card img {
+      width: 15rem;
+    }
+    & .viewedMovies,
+    .viewedSeries,
+    .viewedAnimations {
+      background-color: blue;
+    }
+
+    & .movie-card,
+    .serie-card,
+    .animation-card {
+      background-color: red;
+    }
+  }
+
   @media (max-width: 332px) {
     & .movie-card img,
     .serie-card img,
