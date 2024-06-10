@@ -94,6 +94,17 @@ const MusicSection = styled.section`
     }
   }
 
+  @media (max-width: 426px) {
+    & .musicSkills .musicSkill i,
+    .musicSkill p {
+      font-size: 1.8rem;
+    }
+
+    & .musicSkills .musicSkill i{
+      padding: 1.5rem;
+    }
+  }
+
   @media (max-width: 350px) {
     & img {
       width: 25rem;

@@ -88,4 +88,22 @@ export const InfoSection = styled.section`
       width: 36rem;
     }
   }
+  
+  @media (max-width: 426px) {
+    & .info .info-text p {
+      text-align: justify;
+    }
+  }
+
+  @media (max-width: 417px) {
+    & .info .info-text button {
+      height: 34px;
+    }
+  }
+
+  @media (max-width: 376px) {
+    & .info .info-text p {
+      font-size: 1.9rem;
+    }
+  }
 `;

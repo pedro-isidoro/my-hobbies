@@ -7,6 +7,7 @@
 ### Bibliotecas Utilizadas
 - React
 - Vite
+- Font Awesome
 - Styled Components
 - React Router Dom
 - TMDB - Filmes e Séries

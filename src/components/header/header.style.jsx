@@ -8,9 +8,10 @@ export const Cabecalho = styled.header`
   align-items: center;
   padding: 0 2rem;
   height: 5rem;
-
-  & h2 {
+  
+  & .logo .logo-link h2 {
     font-size: 2.6rem;
+    color: ${(props) => props.color};
   }
 
   & a i {

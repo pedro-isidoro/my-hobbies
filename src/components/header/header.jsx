@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext, themes } from "../../contexts/Theme-context";
 import { Cabecalho } from "./header.style";
+import { Link } from "react-router-dom";
 
 export function Header(){
   //Usando desestruturação para chamar os estados
@@ -17,7 +18,9 @@ export function Header(){
       theme_color={theme.theme_color}
     >
       <div className="logo">
-        <h2>Hobbies</h2>
+        <Link to={"/"} className="logo-link">
+          <h2>Hobbies</h2>
+        </Link>
       </div>
       <a
         onClick={() => {

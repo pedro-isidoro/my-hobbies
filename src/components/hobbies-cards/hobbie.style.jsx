@@ -192,23 +192,23 @@ export const CardsSection = styled.section`
     }
 
     & .slide .item:nth-child(6) {
-      right: 38%;
+      right: 29%;
     }
 
     & .slide .item:nth-child(5) {
-      right: 37%;
+      right: 28%;
     }
 
     & .slide .item:nth-child(4) {
-      right: 36%;
+      right: 27%;
     }
 
     & .slide .item:nth-child(3) {
-      right: 35%;
+      right: 26%;
     }
 
     & .slide .item:nth-child(2) {
-      right: 34%;
+      right: 25%;
     }
   }
 
@@ -326,8 +326,18 @@ export const CardsSection = styled.section`
   }
 
   @media (max-width: 551px) {
+    & .content .name {
+      font-size: 1.9rem;
+    }
+
+    & .content .des {
+      text-align: justify;
+      font-size: 1.5rem;
+      padding: 0 2rem;
+    }
+
     & .slide .item {
-      transform: translate(90%, -50%);
+      transform: translate(70%, -50%);
     }
 
     & .slide .item:nth-child(6) {
@@ -360,10 +370,6 @@ export const CardsSection = styled.section`
   }
 
   @media (max-width: 417px) {
-    & .slide .item {
-      transform: translate(90%, -50%);
-    }
-
     & .item .content {
       left: 5%;
       width: 90%;
