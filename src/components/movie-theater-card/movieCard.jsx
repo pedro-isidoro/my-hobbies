@@ -1,11 +1,12 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { ThemeContext } from '../../contexts/Theme-context';
-import { Button } from '../generic-button/GenericButton';
+import { Modal } from '../generic-modal/GenericModal';
 
 const imageUrl = import.meta.env.VITE_IMG
 
 const MovieCard = ({movie}) => {
   const { theme } = useContext(ThemeContext);
+    const [openMovieModal, setOpenMovieModal] = useState(false)
 
   return (
     <li
@@ -21,12 +22,28 @@ const MovieCard = ({movie}) => {
       </div>
       <div className="newMoreInfo">
         <p>Para mais Informações</p>
-        <Button>Click!</Button>
+        <button onClick={() => setOpenMovieModal(true)}>Click!</button>
       </div>
-      {/* <p>
-        <i className="fa-solid fa-star"></i>
-        {movie.vote_average}
-      </p> */}
+      <Modal
+        isOpen={openMovieModal}
+        setModalClosed={() => setOpenMovieModal(!openMovieModal)}
+      >
+        <div className="movie-modal">
+          <h3>{movie.title} - {movie.release_date}</h3>
+          <img src={imageUrl + movie.poster_path} alt={movie.title} />
+          <div className="description">
+            <h4>
+              Avaliação Média<i className="fa-solid fa-star"></i>
+              {movie.vote_average}
+            </h4>
+            <div className="sinopse">
+              <p>
+                {movie.overview}
+              </p>
+            </div>
+          </div>
+        </div>
+      </Modal>
     </li>
   );
 }

@@ -131,8 +131,22 @@ export const CinephiliaSection = styled.section`
   & .movie-card .newMoreInfo Button,
   .serie-card .newMoreInfo Button,
   .animation-card .newMoreInfo Button {
-    height: 3rem;
     width: 60%;
+    height: 3rem;
+    border-radius: 25rem;
+    font-size: 1.6rem;
+    color: ${(props) => props.color};
+    background-color: ${(props) => props.button};
+    border: 0.1rem solid ${(props) => props.color};
+  }
+
+  & .movie-card .newMoreInfo Button:hover,
+  .serie-card .newMoreInfo Button:hover,
+  .animation-card .newMoreInfo Button:hover {
+    cursor: pointer;
+    background-color: #ababab;
+    color: #fff;
+    border-color: #fff;
   }
 
   & .movie-card:hover .newMoreInfo,
@@ -164,9 +178,79 @@ export const CinephiliaSection = styled.section`
     align-items: center;
   }
 
-  & .movie-card p i,
-  .serie-card p i,
-  .animation-card p i {
-    font-size: 1.5rem;
+  & .movie-card .movie-modal,
+  .serie-card .serie-modal,
+  .animation-card .animation-modal {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  & .movie-card .movie-modal .description,
+  .serie-card .serie-modal .description,
+  .animation-card .animation-modal .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  & .movie-card .movie-modal .description h3,
+  .serie-card .serie-modal .description h3,
+  .animation-card .animation-modal .description h3 {
+    font-size: 2.4rem;
+  }
+
+  & .movie-card .movie-modal .description h4,
+  .serie-card .serie-modal .description h4,
+  .animation-card .animation-modal .description h4,
+  .movie-card .movie-modal .description h4 i,
+  .serie-card .serie-modal .description h4 i,
+  .animation-card .animation-modal .description h4 i {
+    color: white;
+    font-size: 1.6rem;
+    height: 2rem;
+    text-align: center;
+  }
+
+  & .movie-card .movie-modal .description h4 i,
+  .serie-card .serie-modal .description h4 i,
+  .animation-card .animation-modal .description h4 i {
+    margin: 0 0.5rem;
+    color: yellow;
+  }
+
+  & .movie-card .movie-modal .description .sinopse,
+  .serie-card .serie-modal .description .sinopse,
+  .animation-card .animation-modal .description .sinopse {
+    height: 12rem;
+    width: 80%;
+    overflow-y: auto;
+  }
+
+  & .movie-card .movie-modal .description .sinopse::-webkit-scrollbar,
+  .serie-card .serie-modal .description .sinopse::-webkit-scrollbar,
+  .animation-card .animation-modal .description .sinopse::-webkit-scrollbar {
+    width: 0.8rem;
+    border-radius: 1rem;
+    background-color: #00000039;
+  }
+
+  & .movie-card .movie-modal .description .sinopse::-webkit-scrollbar-thumb,
+  .serie-card .serie-modal .description .sinopse::-webkit-scrollbar-thumb,
+  .animation-card .animation-modal .description .sinopse::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: ${(props) => props.color};
+  }
+
+  & .movie-card .movie-modal .description .sinopse p,
+  .serie-card .serie-modal .description .sinopse p,
+  .animation-card .animation-modal .description .sinopse p {
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.9rem;
+    text-align: justify;
   }
 `;
