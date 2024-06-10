@@ -104,4 +104,19 @@ const Div = styled.div`
     color: #fff;
     border-color: #fff;
   }
+
+  @media (max-width: 601px) {
+    & .modal-style {
+      width: 90%;
+      height: 70rem;
+      padding: 3rem 2rem 2rem 2rem;
+    }
+  }
+
+  @media (max-width: 361px) {
+    & .modal-style {
+      height: 60rem;
+      padding: 3rem 1rem 2rem 1rem;
+    }
+  }
 `;
