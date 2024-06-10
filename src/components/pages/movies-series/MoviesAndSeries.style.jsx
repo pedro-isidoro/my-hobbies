@@ -264,14 +264,27 @@ export const CinephiliaSection = styled.section`
     & .viewedMovies,
     .viewedSeries,
     .viewedAnimations {
-      height: 38rem;
+      height: 42rem;
+      width: 95%;
+    }
+
+    & .movie-card,
+    .serie-card,
+    .animation-card {
+      justify-content: center;
     }
 
     & .movie-card img,
     .serie-card img,
     .animation-card img {
-      width: 14.5rem;
+      width: 15rem;
       margin-bottom: 0.8rem;
+    }
+
+    & .movie-card h3,
+    .serie-card h3,
+    .animation-card h3 {
+      font-size: 1.7rem;
     }
 
     & .movie-card .movie-modal .description .sinopse,
@@ -280,6 +293,52 @@ export const CinephiliaSection = styled.section`
       height: 12rem;
       width: 90%;
       overflow-y: auto;
+    }
+  }
+
+  @media (max-width: 412px) {
+    & .viewedMovies,
+    .viewedSeries,
+    .viewedAnimations {
+      height: 48rem;
+    }
+
+    & .movie-card img,
+    .serie-card img,
+    .animation-card img {
+      width: 19rem;
+    }
+  }
+
+  @media (max-width: 371px) {
+    & .movie-card img,
+    .serie-card img,
+    .animation-card img {
+      width: 17.5rem;
+    }
+  }
+  
+  @media (max-width: 361px) {
+    & .movie-card img,
+    .serie-card img,
+    .animation-card img {
+      width: 16rem;
+    }
+  }
+
+  @media (max-width: 345px) {
+    & .movie-card img,
+    .serie-card img,
+    .animation-card img {
+      width: 15rem;
+    }
+  }
+  
+  @media (max-width: 332px) {
+    & .movie-card img,
+    .serie-card img,
+    .animation-card img {
+      width: 13rem;
     }
   }
 `;

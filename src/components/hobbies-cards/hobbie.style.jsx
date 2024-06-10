@@ -236,7 +236,7 @@ export const CardsSection = styled.section`
 
   @media (max-width: 881px) {
     & .slide .item {
-      transform: translate(120%, -50%);
+      transform: translate(90%, -40%);
       width: 8rem;
       height: 6rem;
       top: 94%;
@@ -337,27 +337,27 @@ export const CardsSection = styled.section`
     }
 
     & .slide .item {
-      transform: translate(70%, -50%);
+      transform: translate(70%, -30%);
     }
 
     & .slide .item:nth-child(6) {
-      left: -4%;
+      left: -2%;
     }
 
     & .slide .item:nth-child(5) {
-      left: -5%;
+      left: -3%;
     }
 
     & .slide .item:nth-child(4) {
-      left: -6%;
+      left: -4%;
     }
 
     & .slide .item:nth-child(3) {
-      left: -7%;
+      left: -5%;
     }
 
     & .slide .item:nth-child(2) {
-      left: -8%;
+      left: -6%;
     }
 
     & .button {
@@ -384,23 +384,45 @@ export const CardsSection = styled.section`
     }
 
     & .slide .item:nth-child(6) {
-      left: -8%;
+      left: -6%;
     }
 
     & .slide .item:nth-child(5) {
-      left: -9%;
+      left: -7%;
     }
 
     & .slide .item:nth-child(4) {
-      left: -10%;
+      left: -8%;
     }
 
     & .slide .item:nth-child(3) {
-      left: -11%;
+      left: -9%;
     }
 
     & .slide .item:nth-child(2) {
-      left: -12%;
+      left: -10%;
+    }
+  }
+  
+  @media (max-width: 376px) {
+    & .slide .item:nth-child(6) {
+      left: -3%;
+    }
+
+    & .slide .item:nth-child(5) {
+      left: -4%;
+    }
+
+    & .slide .item:nth-child(4) {
+      left: -5%;
+    }
+
+    & .slide .item:nth-child(3) {
+      left: -6%;
+    }
+
+    & .slide .item:nth-child(2) {
+      left: -7%;
     }
   }
 `;
