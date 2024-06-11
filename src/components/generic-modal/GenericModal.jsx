@@ -20,9 +20,6 @@ export function Modal({ isOpen, setModalClosed, children }) {
           </div>
           <div className="modal-info">
             {children}
-            {/* <button className="closedButton" onClick={setModalClosed}>
-              Fechar
-            </button> */}
           </div>
         </div>
       </Div>

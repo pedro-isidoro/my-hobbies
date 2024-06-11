@@ -51,6 +51,7 @@ export const BooksSection = styled.section`
 
   & .book-slider .newMoreInfo Button,
   .hq-slider .newMoreInfo Button {
+    cursor: pointer;
     color: ${(props) => props.color};
     background-color: ${(props) => props.button};
     border: 0.1rem solid ${(props) => props.color};
@@ -68,15 +69,14 @@ export const BooksSection = styled.section`
   }
 
   & .book-card .book-modal .description h4,
-  .hq-card .hq-modal .description h4,
-  .book-card .book-modal .description h4 i,
-  .hq-card .hq-modal .description h4 i {
+  .hq-card .hq-modal .description h4 {
     color: ${(props) => props.paragraph_color};
   }
 
-  & .book-card .book-modal .description h4 i,
-  .hq-card .hq-modal .description h4 i {
-    color: yellow;
+  & .book-card .book-modal .description span,
+  .hq-card .hq-modal .description span {
+    font-size: 1.6rem;
+    color: ${(props) => props.icon_hover_color};
   }
 
   & .book-card .book-modal .description .sinopse::-webkit-scrollbar,
@@ -92,5 +92,93 @@ export const BooksSection = styled.section`
   & .book-card .book-modal .description .sinopse p,
   .hq-card .hq-modal .description .sinopse p {
     color: ${(props) => props.paragraph_color};
+  }
+
+  @media (max-width: 416px) {
+    & .BooksRead,
+    .BooksToRead {
+      height: 44rem;
+    }
+
+    & .book-card,
+    .hq-card {
+      padding-left: 0rem;
+    }
+
+    & .book-card img,
+    .hq-card img {
+      width: 19rem;
+    }
+
+    & .BooksRead img,
+    .BooksToRead img {
+      width: 17.5rem;
+    }
+
+    & .book-card img,
+    .hq-card img {
+      height: 24rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    & .BooksRead,
+    .BooksToRead {
+      height: 43rem;
+    }
+
+    & .BooksRead img,
+    .BooksToRead img {
+      width: 16rem;
+    }
+
+    & .book-card img,
+    .hq-card img {
+      height: 22rem;
+    }
+  }
+
+  @media (max-width: 385px) {
+    & .BooksRead img,
+    .BooksToRead img {
+      width: 14rem;
+    }
+  }
+
+  @media (max-width: 371px) {
+    & .BooksRead,
+    .BooksToRead {
+      height: 42rem;
+    }
+  }
+
+  /* Meu cell fica entre 361px e 344px */
+  @media (max-width: 361px) {
+    & .BooksRead img,
+    .BooksToRead img {
+      width: 12rem;
+    }
+
+    & .book-card img,
+    .hq-card img {
+      height: 20rem;
+    }
+  }
+
+  @media (max-width: 332px) {
+    & .BooksRead,
+    .BooksToRead {
+      height: 38rem;
+    }
+
+    & .BooksRead img,
+    .BooksToRead img {
+      width: 10rem;
+    }
+
+    & .book-card img,
+    .hq-card img {
+      height: 16rem;
+    }
   }
 `;

@@ -20,7 +20,6 @@ export const CinephiliaSection = styled.section`
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    /* background-color: #3dadd366; */
   }
 
   & Button {
@@ -61,6 +60,7 @@ export const CinephiliaSection = styled.section`
   & .movie-card .newMoreInfo Button,
   .serie-card .newMoreInfo Button,
   .animation-card .newMoreInfo Button {
+    cursor: pointer;
     color: ${(props) => props.color};
     background-color: ${(props) => props.button};
     border: 0.1rem solid ${(props) => props.color};
@@ -115,73 +115,44 @@ export const CinephiliaSection = styled.section`
     color: ${(props) => props.paragraph_color};
   }
 
-  @media (max-width: 417px) {
-    & .viewedMovies,
-    .viewedSeries,
-    .viewedAnimations {
-      height: 39rem;
-      width: 95%;
-      gap: 0;
-    }
-
-    & .movie-card,
-    .serie-card,
-    .animation-card {
-      justify-content: center;
-    }
-
-    & .movie-card img,
-    .serie-card img,
-    .animation-card img {
-      width: 15rem;
-      margin-bottom: 0.8rem;
-    }
-
-    & .movie-card h3,
-    .serie-card h3,
-    .animation-card h3 {
-      font-size: 1.7rem;
-    }
-
-    & .movie-card .movie-modal .description .sinopse,
-    .serie-card .serie-modal .description .sinopse,
-    .animation-card .animation-modal .description .sinopse {
-      height: 12rem;
-      width: 90%;
-      overflow-y: auto;
-    }
-  }
-
   @media (max-width: 412px) {
     & .viewedMovies,
     .viewedSeries,
-    .viewedAnimations {
+    .viewedAnimations{
       height: 42rem;
     }
 
     & .movie-card,
     .serie-card,
-    .animation-card {
+    .animation-card{
       padding-left: 2rem;
     }
 
     & .movie-card img,
     .serie-card img,
-    .animation-card img {
+    .animation-card img{
       width: 19rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    & .movie-card,
+    .serie-card,
+    .animation-card{
+      padding-left: 0rem;
     }
   }
 
   @media (max-width: 371px) {
     & .viewedMovies,
     .viewedSeries,
-    .viewedAnimations {
+    .viewedAnimations{
       height: 39rem;
     }
 
     & .movie-card img,
     .serie-card img,
-    .animation-card img {
+    .animation-card img{
       width: 17.5rem;
     }
   }
@@ -190,7 +161,7 @@ export const CinephiliaSection = styled.section`
   @media (max-width: 361px) {
     & .movie-card img,
     .serie-card img,
-    .animation-card img {
+    .animation-card img{
       width: 16rem;
     }
   }
@@ -204,7 +175,7 @@ export const CinephiliaSection = styled.section`
 
     & .movie-card img,
     .serie-card img,
-    .animation-card img {
+    .animation-card img{
       width: 13rem;
     }
   }

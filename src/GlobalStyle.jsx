@@ -31,7 +31,8 @@ export const GlobalStyle = createGlobalStyle`
   & .viewedMovies .movie-slider Button,
   .viewedSeries .serie-slider Button,
   .viewedAnimations .animation-slider Button,
-  .book-slider Button, .hq-slider Button {
+  .BooksRead .book-slider Button, 
+  .BooksToRead .hq-slider Button {
     width: 6rem;
     height: 3rem;
     padding-top: 0.2rem;
@@ -40,8 +41,8 @@ export const GlobalStyle = createGlobalStyle`
   & .viewedMovies .movie-slider Button i,
   .viewedSeries .serie-slider Button i,
   .viewedAnimations .animation-slider Button i,
-  .book-slider .book-slider Button i, 
-  .hq-slider .hq-slider Button i {
+  .BooksRead .book-slider Button i, 
+  .BooksToRead .hq-slider Button i {
     font-size: 1.8rem;
   }
 
@@ -129,20 +130,6 @@ export const GlobalStyle = createGlobalStyle`
     height: 3rem;
     border-radius: 25rem;
     font-size: 1.6rem;
-    color: ${(props) => props.color};
-    background-color: ${(props) => props.button};
-    border: 0.1rem solid ${(props) => props.color};
-  }
-
-  & .movie-card .newMoreInfo Button:hover,
-  .serie-card .newMoreInfo Button:hover,
-  .animation-card .newMoreInfo Button:hover,
-  .book-card .newMoreInfo Button:hover,
-  .hq-card .newMoreInfo Button:hover {
-    cursor: pointer;
-    background-color: #ababab;
-    color: #fff;
-    border-color: #fff;
   }
 
   & .movie-card:hover .newMoreInfo,
@@ -203,6 +190,11 @@ export const GlobalStyle = createGlobalStyle`
     align-items: center;
     gap: 2rem;
   }
+  
+  & .book-card .book-modal img,
+  .hq-card .hq-modal img {
+    margin-bottom: 0;
+  }
 
   & .movie-card .movie-modal .description,
   .serie-card .serie-modal .description,
@@ -213,6 +205,11 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+  }
+  
+  & .book-card .book-modal .description,
+  .hq-card .hq-modal .description {
+    gap: 0;
   }
 
   & .movie-card .movie-modal h3,
@@ -231,9 +228,7 @@ export const GlobalStyle = createGlobalStyle`
   .hq-card .hq-modal .description h4,
   .movie-card .movie-modal .description h4 i,
   .serie-card .serie-modal .description h4 i,
-  .animation-card .animation-modal .description h4 i, 
-  .book-card .book-modal .description h4 i,
-  .hq-card .hq-modal .description h4 i{
+  .animation-card .animation-modal .description h4 i{
     color: ${(props) => props.paragraph_color};
     font-size: 1.6rem;
     height: 2rem;
@@ -242,11 +237,14 @@ export const GlobalStyle = createGlobalStyle`
 
   & .movie-card .movie-modal .description h4 i,
   .serie-card .serie-modal .description h4 i,
-  .animation-card .animation-modal .description h4 i, 
-  .book-card .book-modal .description h4 i,
-  .hq-card .hq-modal .description h4 i {
+  .animation-card .animation-modal .description h4 i{
     margin: 0 0.5rem;
     color: yellow;
+  }
+
+  & .book-card .book-modal .description h4.gener,
+  .hq-card .hq-modal .description h4.gener{
+    margin-bottom: 1rem;
   }
 
   & .movie-card .movie-modal .description .sinopse,
@@ -288,5 +286,50 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0 1rem;
     font-size: 1.9rem;
     text-align: justify;
+  }
+
+  @media (max-width: 417px) {
+    & .viewedMovies,
+    .viewedSeries,
+    .viewedAnimations,
+    .BooksRead,
+    .BooksToRead {
+      height: 39rem;
+      width: 95%;
+      gap: 0;
+    }
+
+    & .movie-card,
+    .serie-card,
+    .animation-card,
+    .book-card,
+    .hq-card {
+      justify-content: center;
+    }
+
+    & .movie-card img,
+    .serie-card img,
+    .animation-card img {
+      width: 15rem;
+      margin-bottom: 0.8rem;
+    }
+
+    & .movie-card h3,
+    .serie-card h3,
+    .animation-card h3,
+    .book-card h3,
+    .hq-card h3 {
+      font-size: 1.7rem;
+    }
+
+    & .movie-card .movie-modal .description .sinopse,
+    .serie-card .serie-modal .description .sinopse,
+    .animation-card .animation-modal .description .sinopse,
+    .book-card .book-modal .description .sinopse,
+    .hq-card .hq-modal .description .sinopse {
+      height: 12rem;
+      width: 90%;
+      overflow-y: auto;
+    }
   }
 `;

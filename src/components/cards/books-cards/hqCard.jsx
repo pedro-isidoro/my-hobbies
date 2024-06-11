@@ -10,10 +10,17 @@ const HQCard = () => {
   const { theme } = useContext(ThemeContext);
   const [openHQModal, setopenHQModal] = useState(false);
   const [hqsCards, setHqsCards] = useState([]);
+  const [actualHQ, setActualHQ] = useState('')
 
   useEffect(() => {
     setHqsCards(hqsData);
   }, []);
+
+  function hqStates(hq){
+    setopenHQModal(true);
+    setActualHQ(hq)
+    // console.log(hq)
+  }
 
   return (
     <div
@@ -36,7 +43,7 @@ const HQCard = () => {
               </div>
               <div className="newMoreInfo">
                 <p>Para mais Informações</p>
-                <button onClick={() => setopenHQModal(true)}>Click!</button>
+                <button onClick={() => hqStates(hq)}>Click!</button>
               </div>
               <Modal
                 isOpen={openHQModal}
@@ -44,16 +51,18 @@ const HQCard = () => {
               >
                 <div className="hq-modal">
                   <h3>
-                    {hq.name} <br /> {hq.release_date}
+                    {actualHQ.name} <br /> {actualHQ.release_date}
                   </h3>
-                  <img src={hq.url} alt={hq.name} />
+                  <img src={actualHQ.url} alt={actualHQ.name} />
                   <div className="description">
-                    <h4>
-                      Autor: {hq.author} <br />
-                      Gênero: {hq.genre}
+                    <h4 className="author">
+                      Autor: <span>{actualHQ.author}</span>
+                    </h4>
+                    <h4 className="gener">
+                      Gênero: <span>{actualHQ.genre}</span>
                     </h4>
                     <div className="sinopse">
-                      <p>{hq.sinopse}</p>
+                      <p>{actualHQ.sinopse}</p>
                     </div>
                   </div>
                 </div>

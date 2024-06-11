@@ -53,7 +53,7 @@ export const Whatsapp = styled.section`
     }
 
     & a i {
-      margin: 0.6rem 0 0 0.1rem;
+      margin: 0.4rem 0 0 0.1rem;
       font-size: 2.5rem;
     }
   }

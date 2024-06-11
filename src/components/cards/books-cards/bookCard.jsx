@@ -10,11 +10,17 @@ const BookCard = () => {
   const { theme } = useContext(ThemeContext);
   const [openBookModal, setopenBookModal] = useState(false);
   const [booksCards, setBooksCards] = useState([]);
+  const [actualBook, setActualBook] = useState("");
 
   useEffect(() => {
     setBooksCards(booksData);
   }, []);
   // console.log(booksData);
+
+  function bookStates(book) {
+    setopenBookModal(true);
+    setActualBook(book);
+  }
 
   return (
     <div
@@ -37,7 +43,7 @@ const BookCard = () => {
               </div>
               <div className="newMoreInfo">
                 <p>Para mais Informações</p>
-                <button onClick={() => setopenBookModal(true)}>Click!</button>
+                <button onClick={() => bookStates(book)}>Click!</button>
               </div>
               <Modal
                 isOpen={openBookModal}
@@ -45,16 +51,19 @@ const BookCard = () => {
               >
                 <div className="book-modal">
                   <h3>
-                    {book.name} <br /> {book.release_date}
+                    {actualBook.name} <br />
+                    {actualBook.release_date}
                   </h3>
-                  <img src={book.url} alt={book.name} />
+                  <img src={actualBook.url} alt={actualBook.name} />
                   <div className="description">
-                    <h4>
-                      Autor: {book.author} <br />
-                      Gênero: {book.genre}
+                    <h4 className="author">
+                      Autor: <span>{actualBook.author}</span>
+                    </h4>
+                    <h4 className="gener">
+                      Gênero: <span>{actualBook.genre}</span>
                     </h4>
                     <div className="sinopse">
-                      <p>{book.sinopse}</p>
+                      <p>{actualBook.sinopse}</p>
                     </div>
                   </div>
                 </div>
