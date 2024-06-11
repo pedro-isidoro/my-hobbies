@@ -4,6 +4,9 @@ import { BooksSection } from "./booksRead.style";
 import { Link } from "react-router-dom";
 import { Button } from "../../generic-button/GenericButton";
 
+import BookCard from "../../cards/books-cards/bookCard";
+import HQCard from "../../cards/books-cards/hqCard";
+
 export function BooksRead() {
   const { theme } = useContext(ThemeContext);
 
@@ -15,12 +18,12 @@ export function BooksRead() {
       button={theme.background_header_footer_color}
     >
       <div className="BooksRead">
-        <h3>Livros</h3>
-        <p>XXXXXXXXXXXXXXXX</p>
+        <h2>Livros</h2>
+        <BookCard />
       </div>
       <div className="BooksToRead">
-        <h3>HQ's e Mangás</h3>
-        <p>XXXXXXXXXXXXXXXX</p>
+        <h2>HQ's</h2>
+        <HQCard />
       </div>
       <Link to="/">
         <Button>Home Page</Button>

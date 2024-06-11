@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../contexts/Theme-context";
 import { MainSection } from "./main-container.style";
-import { HobbiesCards } from "../hobbies-cards/hobbies";
+import { HobbiesCards } from "../cards/hobbies-cards/hobbies";
 import { InfoCard } from "../info-card/info";
 
 export function MainContainer() {

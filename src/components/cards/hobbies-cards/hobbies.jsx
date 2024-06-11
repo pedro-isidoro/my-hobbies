@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../../contexts/Theme-context";
-import { Button } from "../generic-button/GenericButton";
+import { ThemeContext } from "../../../contexts/Theme-context";
+import { Button } from "../../generic-button/GenericButton";
 import { CardsSection } from "./hobbie.style";
 import { Link } from "react-router-dom";
 import hobbieData from "/src/json/hobbies-card.json";

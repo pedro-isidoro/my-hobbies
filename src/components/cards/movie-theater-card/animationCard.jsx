@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
-import { ThemeContext } from '../../contexts/Theme-context';
-import { Modal } from '../generic-modal/GenericModal';
+import { ThemeContext } from '../../../contexts/Theme-context';
+import { Modal } from '../../generic-modal/GenericModal';
 
 const imageUrl = import.meta.env.VITE_IMG
 

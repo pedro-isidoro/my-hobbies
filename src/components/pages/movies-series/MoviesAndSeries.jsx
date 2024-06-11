@@ -1,13 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { useMoviesAndSeries } from "../../../hook/MovieAndSerieRequest";
 import { ThemeContext } from "../../../contexts/Theme-context";
 import { CinephiliaSection } from "./MoviesAndSeries.style";
 import { Link } from "react-router-dom";
 import { Button } from "../../generic-button/GenericButton";
 
-import MovieCard from "../../movie-theater-card/movieCard";
-import SerieCard from "../../movie-theater-card/serieCard";
-import AnimationCard from "../../movie-theater-card/animationCard";
+import MovieCard from "../../cards/movie-theater-card/movieCard";
+import SerieCard from "../../cards/movie-theater-card/serieCard";
+import AnimationCard from "../../cards/movie-theater-card/animationCard";
+
 import { nextMovieCard, prevMovieCard } from "../../../js/moviesArrowsFunction";
 import { nextAnimationCard, prevAnimationCard } from "../../../js/animationsArrowsFunction";
 import { nextSerieCard, prevSerieCard } from "../../../js/seriesArrowsFunction";
