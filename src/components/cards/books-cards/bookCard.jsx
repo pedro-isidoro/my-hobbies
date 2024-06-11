@@ -48,6 +48,7 @@ const BookCard = () => {
               <Modal
                 isOpen={openBookModal}
                 setModalClosed={() => setopenBookModal(!openBookModal)}
+                className='bookModal'
               >
                 <div className="book-modal">
                   <h3>

@@ -218,7 +218,6 @@ export const GlobalStyle = createGlobalStyle`
   .book-card .book-modal h3,
   .hq-card .hq-modal h3 {
     font-size: 2rem;
-    color: ${(props) => props.paragraph_color};
   }
 
   & .movie-card .movie-modal .description h4,
@@ -229,7 +228,6 @@ export const GlobalStyle = createGlobalStyle`
   .movie-card .movie-modal .description h4 i,
   .serie-card .serie-modal .description h4 i,
   .animation-card .animation-modal .description h4 i{
-    color: ${(props) => props.paragraph_color};
     font-size: 1.6rem;
     height: 2rem;
     text-align: center;
@@ -273,7 +271,6 @@ export const GlobalStyle = createGlobalStyle`
   .book-card .book-modal .description .sinopse::-webkit-scrollbar-thumb,
   .hq-card .hq-modal .description .sinopse::-webkit-scrollbar-thumb {
     border-radius: 1rem;
-    background-color: ${(props) => props.paragraph_color};
   }
 
   & .movie-card .movie-modal .description .sinopse p,

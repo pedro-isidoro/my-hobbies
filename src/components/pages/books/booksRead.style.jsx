@@ -78,15 +78,10 @@ export const BooksSection = styled.section`
     font-size: 1.6rem;
     color: ${(props) => props.icon_hover_color};
   }
-
-  & .book-card .book-modal .description .sinopse::-webkit-scrollbar,
-  .hq-card .hq-modal .description .sinopse::-webkit-scrollbar {
-    background-color: #00000039;
-  }
-
-  & .book-card .book-modal .description .sinopse::-webkit-scrollbar-thumb,
-  .hq-card .hq-modal .description .sinopse::-webkit-scrollbar-thumb {
-    background-color: ${(props) => props.paragraph_color};
+    
+    & .book-card .book-modal .description .sinopse::-webkit-scrollbar-thumb,
+    .hq-card .hq-modal .description .sinopse::-webkit-scrollbar-thumb {
+      background-color: ${(props) => props.paragraph_color};
   }
 
   & .book-card .book-modal .description .sinopse p,
@@ -134,7 +129,30 @@ export const BooksSection = styled.section`
 
     & .book-card img,
     .hq-card img {
-      height: 22rem;
+      height: 24rem;
+    }
+
+    & .book-card .book-modal h3,
+    .hq-card .hq-modal h3 {
+      font-size: 1.8rem;
+    }
+
+    & .book-card .book-modal .description h4,
+    .hq-card .hq-modal .description h4,
+    & .book-card .book-modal .description span,
+    .hq-card .hq-modal .description span {
+      font-size: 1.4rem;
+    }
+
+    & .book-card .book-modal .description h4.gener,
+    .hq-card .hq-modal .description h4.gener {
+      margin-bottom: 3rem;
+    }
+
+    & .book-card .book-modal .description p,
+    .hq-card .hq-modal .description p {
+      font-size: 1.4rem;
+      height: 18rem;
     }
   }
 
@@ -150,18 +168,28 @@ export const BooksSection = styled.section`
     .BooksToRead {
       height: 42rem;
     }
+
+    & .BooksRead img,
+    .BooksToRead img {
+      width: 18rem;
+    }
   }
 
   /* Meu cell fica entre 361px e 344px */
   @media (max-width: 361px) {
     & .BooksRead img,
     .BooksToRead img {
-      width: 12rem;
+      width: 15rem;
     }
 
     & .book-card img,
     .hq-card img {
       height: 20rem;
+    }
+
+    & .book-card,
+    .hq-card {
+      left: 2rem;
     }
   }
 

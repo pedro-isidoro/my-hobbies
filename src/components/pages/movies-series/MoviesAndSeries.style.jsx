@@ -94,12 +94,6 @@ export const CinephiliaSection = styled.section`
     color: yellow;
   }
 
-  & .movie-card .movie-modal .description .sinopse::-webkit-scrollbar,
-  .serie-card .serie-modal .description .sinopse::-webkit-scrollbar,
-  .animation-card .animation-modal .description .sinopse::-webkit-scrollbar {
-    background-color: #00000039;
-  }
-
   & .movie-card .movie-modal .description .sinopse::-webkit-scrollbar-thumb,
   .serie-card .serie-modal .description .sinopse::-webkit-scrollbar-thumb,
   .animation-card
