@@ -99,7 +99,7 @@ export const CinephiliaSection = styled.section`
   .serie-card .newMoreInfo,
   .animation-card .newMoreInfo {
     position: absolute;
-    width: 90%;
+    width: 94%;
     height: 18rem;
     bottom: 0;
     display: flex;
@@ -107,8 +107,9 @@ export const CinephiliaSection = styled.section`
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    background-color: ${(props) => props.color};
     opacity: 0.4;
+    border-radius: 2rem 2rem 0 0;
+    background-color: ${(props) => props.color};
     transform: translateY(90%);
     transition: transform 0.4s ease-in-out;
   }
@@ -258,8 +259,9 @@ export const CinephiliaSection = styled.section`
     & .viewedMovies,
     .viewedSeries,
     .viewedAnimations {
-      height: 42rem;
+      height: 39rem;
       width: 95%;
+      gap: 0;
     }
 
     & .movie-card,
@@ -294,7 +296,7 @@ export const CinephiliaSection = styled.section`
     & .viewedMovies,
     .viewedSeries,
     .viewedAnimations {
-      height: 48rem;
+      height: 42rem;
     }
 
     & .movie-card,
@@ -311,6 +313,12 @@ export const CinephiliaSection = styled.section`
   }
 
   @media (max-width: 371px) {
+    & .viewedMovies,
+    .viewedSeries,
+    .viewedAnimations {
+      height: 39rem;
+    }
+
     & .movie-card img,
     .serie-card img,
     .animation-card img {
@@ -318,6 +326,7 @@ export const CinephiliaSection = styled.section`
     }
   }
 
+  /* Meu cell fica entre 361px e 344px */
   @media (max-width: 361px) {
     & .movie-card img,
     .serie-card img,
@@ -326,48 +335,13 @@ export const CinephiliaSection = styled.section`
     }
   }
 
-  @media (max-width: 371px) {
-    & .viewedMovies,
-    .viewedSeries,
-    .viewedAnimations {
-      background-color: red;
-    }
-
-    & .movie-card,
-    .serie-card,
-    .animation-card {
-      background-color: blue;
-    }
-  }
-  @media (max-width: 361px) {
-    & .viewedMovies,
-    .viewedSeries,
-    .viewedAnimations {
-      background-color: blue;
-    }
-
-    & .movie-card,
-    .serie-card,
-    .animation-card {
-      background-color: red;
-    }
-  }
-
-  @media (max-width: 345px) {
-    & .viewedMovies,
-    .viewedSeries,
-    .viewedAnimations {
-      background-color: transparent;
-    }
-
-    & .movie-card,
-    .serie-card,
-    .animation-card {
-      background-color: transparent;
-    }
-  }
-
   @media (max-width: 332px) {
+    & .viewedMovies,
+    .viewedSeries,
+    .viewedAnimations {
+      height: 35rem;
+    }
+
     & .movie-card img,
     .serie-card img,
     .animation-card img {

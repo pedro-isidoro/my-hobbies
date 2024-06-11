@@ -203,6 +203,7 @@ export const CardsSection = styled.section`
       width: 8rem;
       height: 6rem;
       top: 94%;
+      transition: linear 2s ease-in-out;
     }
 
     & .slide .item:nth-child(6) {
