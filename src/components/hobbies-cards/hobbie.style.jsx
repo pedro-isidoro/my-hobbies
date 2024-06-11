@@ -16,7 +16,7 @@ export const CardsSection = styled.section`
     background-size: cover;
     background-position: 50% 50%;
     transform: translate(90%, -50%);
-    transition: transform 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
   }
 
   & .slide .item:nth-child(1) {

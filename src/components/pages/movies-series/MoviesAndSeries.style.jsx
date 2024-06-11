@@ -297,6 +297,12 @@ export const CinephiliaSection = styled.section`
       height: 48rem;
     }
 
+    & .movie-card,
+    .serie-card,
+    .animation-card {
+      padding-left: 2rem;
+    }
+
     & .movie-card img,
     .serie-card img,
     .animation-card img {
@@ -320,7 +326,7 @@ export const CinephiliaSection = styled.section`
     }
   }
 
-  @media (max-width: 350px) {
+  @media (max-width: 371px) {
     & .viewedMovies,
     .viewedSeries,
     .viewedAnimations {
@@ -333,12 +339,31 @@ export const CinephiliaSection = styled.section`
       background-color: blue;
     }
   }
-  
+  @media (max-width: 361px) {
+    & .viewedMovies,
+    .viewedSeries,
+    .viewedAnimations {
+      background-color: blue;
+    }
+
+    & .movie-card,
+    .serie-card,
+    .animation-card {
+      background-color: red;
+    }
+  }
+
   @media (max-width: 345px) {
-    & .movie-card img,
-    .serie-card img,
-    .animation-card img {
-      width: 15rem;
+    & .viewedMovies,
+    .viewedSeries,
+    .viewedAnimations {
+      background-color: transparent;
+    }
+
+    & .movie-card,
+    .serie-card,
+    .animation-card {
+      background-color: transparent;
     }
   }
 
