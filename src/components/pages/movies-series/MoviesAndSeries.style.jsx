@@ -71,17 +71,13 @@ export const CinephiliaSection = styled.section`
   .viewedSeries .serie-slider .card,
   .viewedAnimations .animation-slider .card {
     width: 100%;
-    height: 87%;
+    height: 97%;
     padding: 0 0.5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
     gap: 2rem;
-  }
-
-  & .viewedAnimations .animation-slider .card {
-    height: 93%;
   }
 
   & .movie-card,
@@ -104,7 +100,7 @@ export const CinephiliaSection = styled.section`
   .animation-card .newMoreInfo {
     position: absolute;
     width: 90%;
-    height: 14rem;
+    height: 18rem;
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -112,12 +108,9 @@ export const CinephiliaSection = styled.section`
     justify-content: center;
     gap: 2rem;
     background-color: ${(props) => props.color};
-    transform: translateY(101%);
-    transition: transform 0.3s ease-in;
-  }
-
-  & .animation-card .newMoreInfo {
-    height: 16rem;
+    opacity: 0.4;
+    transform: translateY(90%);
+    transition: transform 0.4s ease-in-out;
   }
 
   & .movie-card .newMoreInfo p,
@@ -154,6 +147,7 @@ export const CinephiliaSection = styled.section`
   .serie-card:hover .newMoreInfo,
   .animation-card:hover .newMoreInfo {
     transform: translateY(0);
+    opacity: 1;
   }
 
   & .movie-card img,
@@ -326,12 +320,7 @@ export const CinephiliaSection = styled.section`
     }
   }
 
-  @media (max-width: 345px) {
-    & .movie-card img,
-    .serie-card img,
-    .animation-card img {
-      width: 15rem;
-    }
+  @media (max-width: 350px) {
     & .viewedMovies,
     .viewedSeries,
     .viewedAnimations {
@@ -345,22 +334,11 @@ export const CinephiliaSection = styled.section`
     }
   }
   
-  @media (max-width: 335px) {
+  @media (max-width: 345px) {
     & .movie-card img,
     .serie-card img,
     .animation-card img {
       width: 15rem;
-    }
-    & .viewedMovies,
-    .viewedSeries,
-    .viewedAnimations {
-      background-color: blue;
-    }
-
-    & .movie-card,
-    .serie-card,
-    .animation-card {
-      background-color: red;
     }
   }
 

@@ -4,31 +4,19 @@ export const CardsSection = styled.section`
   position: relative;
   width: 100%;
   height: 60rem;
-  animation: show 6s ease-in-out both;
-
-  @keyframes show {
-    from {
-      transform: scale(0);
-      opacity: 0.4;
-    }
-    to {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
 
   & .slide .item {
+    position: absolute;
+    display: inline-block;
     width: 12rem;
     height: 8rem;
     top: 90%;
     border-radius: 2rem;
     border: 0.2rem solid #000;
-    background-position: 50% 50%;
     background-size: cover;
-    transform: translate(226%, -50%);
-    transition: 0.5s;
-    position: absolute;
-    display: inline-block;
+    background-position: 50% 50%;
+    transform: translate(90%, -50%);
+    transition: transform 0.6s ease-in-out;
   }
 
   & .slide .item:nth-child(1) {
@@ -40,26 +28,6 @@ export const CardsSection = styled.section`
     border-radius: 2rem;
     border: none;
     box-shadow: 0.6rem 0.7rem 0.5rem ${(props) => props.shadow_color};
-  }
-
-  & .slide .item:nth-child(6) {
-    right: 33%;
-  }
-
-  & .slide .item:nth-child(5) {
-    right: 32%;
-  }
-
-  & .slide .item:nth-child(4) {
-    right: 31%;
-  }
-
-  & .slide .item:nth-child(3) {
-    right: 30%;
-  }
-
-  & .slide .item:nth-child(2) {
-    right: 29%;
   }
 
   & .item .content .not-exist {
@@ -144,71 +112,67 @@ export const CardsSection = styled.section`
 
   @media (max-width: 1921px) {
     & .slide .item:nth-child(6) {
-      right: 29%;
+      right: 20%;
     }
 
     & .slide .item:nth-child(5) {
-      right: 28%;
+      right: 19%;
     }
 
     & .slide .item:nth-child(4) {
-      right: 27%;
+      right: 18%;
     }
 
     & .slide .item:nth-child(3) {
-      right: 26%;
+      right: 17%;
     }
 
     & .slide .item:nth-child(2) {
-      right: 25%;
+      right: 16%;
     }
   }
 
-  @media (max-width: 1536px) {
+  @media (max-width: 1537px) {
     & .slide .item:nth-child(6) {
-      right: 33%;
+      right: 22%;
     }
 
     & .slide .item:nth-child(5) {
-      right: 32%;
+      right: 21%;
     }
 
     & .slide .item:nth-child(4) {
-      right: 31%;
+      right: 20%;
     }
 
     & .slide .item:nth-child(3) {
-      right: 30%;
+      right: 19%;
     }
 
     & .slide .item:nth-child(2) {
-      right: 29%;
+      right: 18%;
     }
   }
 
   @media (max-width: 1441px) {
-    & .slide .item {
-      transform: translate(175%, -50%);
-    }
-
     & .slide .item:nth-child(6) {
-      right: 29%;
+      right: 23%;
     }
 
     & .slide .item:nth-child(5) {
-      right: 28%;
+      right: 22%;
     }
 
     & .slide .item:nth-child(4) {
-      right: 27%;
+      right: 21%;
     }
 
     & .slide .item:nth-child(3) {
-      right: 26%;
+      right: 20%;
     }
 
     & .slide .item:nth-child(2) {
-      right: 25%;
+      right: 19%;
     }
   }
 
@@ -236,26 +200,25 @@ export const CardsSection = styled.section`
 
   @media (max-width: 881px) {
     & .slide .item {
-      transform: translate(90%, -40%);
       width: 8rem;
       height: 6rem;
       top: 94%;
     }
 
     & .slide .item:nth-child(6) {
-      left: 6%;
+      left: 10%;
     }
 
     & .slide .item:nth-child(5) {
-      left: 5%;
+      left: 8%;
     }
 
     & .slide .item:nth-child(4) {
-      left: 4%;
+      left: 6%;
     }
 
     & .slide .item:nth-child(3) {
-      left: 3%;
+      left: 4%;
     }
 
     & .slide .item:nth-child(2) {
@@ -265,19 +228,19 @@ export const CardsSection = styled.section`
 
   @media (max-width: 761px) {
     & .slide .item:nth-child(6) {
-      left: -16%;
+      left: -20%;
     }
 
     & .slide .item:nth-child(5) {
-      left: -15%;
+      left: -18%;
     }
 
     & .slide .item:nth-child(4) {
-      left: -14%;
+      left: -16%;
     }
 
     & .slide .item:nth-child(3) {
-      left: -13%;
+      left: -14%;
     }
 
     & .slide .item:nth-child(2) {
@@ -297,23 +260,23 @@ export const CardsSection = styled.section`
     }
 
     & .slide .item:nth-child(6) {
-      left: 0;
+      left: 6%;
     }
 
     & .slide .item:nth-child(5) {
-      left: -1%;
+      left: 4%;
     }
 
     & .slide .item:nth-child(4) {
-      left: -2%;
+      left: 2%;
     }
 
     & .slide .item:nth-child(3) {
-      left: -3%;
+      left: 2%;
     }
 
     & .slide .item:nth-child(2) {
-      left: -4%;
+      left: 0%;
     }
 
     & .button {
@@ -336,24 +299,20 @@ export const CardsSection = styled.section`
       padding: 0 2rem;
     }
 
-    & .slide .item {
-      transform: translate(60%, -30%);
-    }
-
     & .slide .item:nth-child(6) {
-      left: -2%;
+      left: 2%;
     }
 
     & .slide .item:nth-child(5) {
-      left: -3%;
+      left: 0%;
     }
 
     & .slide .item:nth-child(4) {
-      left: -4%;
+      left: -2%;
     }
 
     & .slide .item:nth-child(3) {
-      left: -5%;
+      left: -4%;
     }
 
     & .slide .item:nth-child(2) {
@@ -384,19 +343,19 @@ export const CardsSection = styled.section`
     }
 
     & .slide .item:nth-child(6) {
-      left: -6%;
+      left: -2%;
     }
 
     & .slide .item:nth-child(5) {
-      left: -7%;
+      left: -4%;
     }
 
     & .slide .item:nth-child(4) {
-      left: -8%;
+      left: -6%;
     }
 
     & .slide .item:nth-child(3) {
-      left: -9%;
+      left: -8%;
     }
 
     & .slide .item:nth-child(2) {
@@ -405,28 +364,24 @@ export const CardsSection = styled.section`
   }
 
   @media (max-width: 376px) {
-    & .slide .item {
-      transform: translate(50%, -30%);
-    }
-
     & .slide .item:nth-child(6) {
-      left: -3%;
-    }
-
-    & .slide .item:nth-child(5) {
-      left: -4%;
-    }
-
-    & .slide .item:nth-child(4) {
-      left: -5%;
-    }
-
-    & .slide .item:nth-child(3) {
       left: -6%;
     }
 
+    & .slide .item:nth-child(5) {
+      left: -8%;
+    }
+
+    & .slide .item:nth-child(4) {
+      left: -10%;
+    }
+
+    & .slide .item:nth-child(3) {
+      left: -12%;
+    }
+
     & .slide .item:nth-child(2) {
-      left: -7%;
+      left: -14%;
     }
   }
 `;
