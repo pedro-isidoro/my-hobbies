@@ -9,13 +9,7 @@ const MovieCard = ({movie}) => {
     const [openMovieModal, setOpenMovieModal] = useState(false)
 
   return (
-    <li
-      className="movie-card movie-item"
-      color={theme.color}
-      background={theme.background_general_color}
-      paragraph_color={theme.paragraph_color}
-      button={theme.background_header_footer_color}
-    >
+    <li className="movie-card movie-item">
       <div className="poster">
         <img src={imageUrl + movie.poster_path} alt={movie.title} />
         <h3>{movie.original_title}</h3>
@@ -30,13 +24,13 @@ const MovieCard = ({movie}) => {
       >
         <div className="movie-modal">
           <h3>
-            {movie.title} <br /> {movie.release_date}
+            {movie.title} <br /> <span>{movie.release_date}</span>
           </h3>
           <img src={imageUrl + movie.poster_path} alt={movie.title} />
           <div className="description">
             <h4>
               Avaliação Média -<i className="fa-solid fa-star"></i>
-              {movie.vote_average}
+              <span>{movie.vote_average}</span>
             </h4>
             <div className="sinopse">
               <p>{movie.overview}</p>

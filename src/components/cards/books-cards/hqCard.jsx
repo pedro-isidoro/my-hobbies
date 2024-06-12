@@ -22,13 +22,7 @@ const HQCard = () => {
   }
 
   return (
-    <div
-      className="hq-slider"
-      color={theme.color}
-      background={theme.background_general_color}
-      paragraph_color={theme.paragraph_color}
-      button={theme.background_header_footer_color}
-    >
+    <div className="hq-slider">
       <Button className="prev" onClick={nextHQCard}>
         <i className="fa-solid fa-arrow-left-long" onClick={nextHQCard}></i>
       </Button>
@@ -50,7 +44,7 @@ const HQCard = () => {
               >
                 <div className="hq-modal">
                   <h3>
-                    {actualHQ.name} <br /> {actualHQ.release_date}
+                    {actualHQ.name} <br /> <span>{actualHQ.release_date}</span>
                   </h3>
                   <img src={actualHQ.url} alt={actualHQ.name} />
                   <div className="description">

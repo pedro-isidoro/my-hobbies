@@ -22,13 +22,7 @@ const BookCard = () => {
   }
 
   return (
-    <div
-      className="book-slider"
-      color={theme.color}
-      background={theme.background_general_color}
-      paragraph_color={theme.paragraph_color}
-      button={theme.background_header_footer_color}
-    >
+    <div className="book-slider">
       <Button className="prev" onClick={nextBookCard}>
         <i className="fa-solid fa-arrow-left-long" onClick={nextBookCard}></i>
       </Button>
@@ -47,12 +41,12 @@ const BookCard = () => {
               <Modal
                 isOpen={openBookModal}
                 setModalClosed={() => setopenBookModal(!openBookModal)}
-                className='bookModal'
+                className="bookModal"
               >
                 <div className="book-modal">
                   <h3>
                     {actualBook.name} <br />
-                    {actualBook.release_date}
+                    <span>{actualBook.release_date}</span>
                   </h3>
                   <img src={actualBook.url} alt={actualBook.name} />
                   <div className="description">

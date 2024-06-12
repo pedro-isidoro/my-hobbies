@@ -79,9 +79,21 @@ export const CinephiliaSection = styled.section`
 
   & .movie-card .movie-modal h3,
   .serie-card .serie-modal h3,
-  .animation-card .animation-modal h3 {
+  .animation-card .animation-modal h3,
+  .movie-card .movie-modal h3 span,
+  .serie-card .serie-modal h3 span,
+  .animation-card .animation-modal h3 span {
     font-size: 2rem;
     color: ${(props) => props.paragraph_color};
+  }
+
+  & .movie-card .movie-modal h3 span,
+  .serie-card .serie-modal h3 span,
+  .animation-card .animation-modal h3 span,
+  .movie-card .movie-modal .description h4 span,
+  .serie-card .serie-modal .description h4 span,
+  .animation-card .animation-modal .description h4 span {
+    color: ${(props) => props.span};
   }
 
   & .movie-card .movie-modal .description h4,

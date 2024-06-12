@@ -68,7 +68,9 @@ export const BooksSection = styled.section`
   }
 
   & .book-card .book-modal h3,
-  .hq-card .hq-modal h3 {
+  .hq-card .hq-modal h3,
+  .book-card .book-modal h3 span,
+  .hq-card .hq-modal h3 span {
     font-size: 2rem;
     color: ${(props) => props.paragraph_color};
   }
@@ -81,7 +83,13 @@ export const BooksSection = styled.section`
   & .book-card .book-modal .description span,
   .hq-card .hq-modal .description span {
     font-size: 1.6rem;
-    color: ${(props) => props.icon_hover_color};
+  }
+
+  & .book-card .book-modal .description span,
+  .hq-card .hq-modal .description span,
+  .book-card .book-modal h3 span,
+  .hq-card .hq-modal h3 span {
+    color: ${(props) => props.span};
   }
 
   & .book-card .book-modal .description .sinopse::-webkit-scrollbar-thumb,

@@ -9,13 +9,7 @@ const AnimationCard = ({ animation }) => {
   const [openAnimationModal, setOpenAnimationModal] = useState(false);
 
   return (
-    <li
-      className="animation-card animation-item"
-      color={theme.color}
-      background={theme.background_general_color}
-      paragraph_color={theme.paragraph_color}
-      button={theme.background_header_footer_color}
-    >
+    <li className="animation-card animation-item">
       <div className="poster">
         <img src={imageUrl + animation.poster_path} alt={animation.title} />
         <h3>{animation.original_title}</h3>
@@ -30,13 +24,13 @@ const AnimationCard = ({ animation }) => {
       >
         <div className="animation-modal">
           <h3>
-            {animation.title} <br /> {animation.release_date}
+            {animation.title} <br /> <span>{animation.release_date}</span>
           </h3>
           <img src={imageUrl + animation.poster_path} alt={animation.title} />
           <div className="description">
             <h4>
               Avaliação Média -<i className="fa-solid fa-star"></i>
-              {animation.vote_average}
+              <span>{animation.vote_average}</span>
             </h4>
             <div className="sinopse">
               <p>{animation.overview}</p>

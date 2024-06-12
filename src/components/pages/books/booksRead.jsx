@@ -17,6 +17,7 @@ export function BooksRead() {
       paragraph_color={theme.paragraph_color}
       button={theme.background_header_footer_color}
       icon_hover_color={theme.icon_hover_color}
+      span={theme.span_color}
     >
       <div className="BooksRead">
         <h2>Livros</h2>

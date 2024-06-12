@@ -40,6 +40,7 @@ export function MoviesAndSeries() {
       background={theme.background_general_color}
       paragraph_color={theme.paragraph_color}
       button={theme.background_header_footer_color}
+      span={theme.span_color}
     >
       <div className="viewedMovies">
         <h2>Filmes</h2>

@@ -11,6 +11,7 @@ export const themes = {
     icon_color: "#92cace",
     icon_hover_color: "#1a2c32",
     box_shadow_color: "#5facb1",
+    span_color: "#92cace",
 
     background_header_footer_color: "#3b757f",
     background_general_color: "#ddeff0",
@@ -26,6 +27,7 @@ export const themes = {
     icon_color: "#B96BB7",
     icon_hover_color: "#e5c2e5",
     box_shadow_color: "#f181f0",
+    span_color: "#e5c2e5",
 
     background_header_footer_color: "#083764",
     background_general_color: "#18181b",

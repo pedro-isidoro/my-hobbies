@@ -46,16 +46,6 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1.8rem;
   }
 
-  & .viewedMovies h2,
-  .viewedSeries h2,
-  .viewedAnimations h2,
-  .viewedMovies .movie-slider p,
-  .viewedSeries .serie-slider p,
-  .viewedAnimations .animation-slider p,
-  .book-slider p, .hq-slider p {
-    color: ${(props) => props.color};
-  }
-
   /* A partir daqui será os movie and series cards */
   & .viewedMovies .movie-slider .card,
   .viewedSeries .serie-slider .card,
@@ -103,7 +93,6 @@ export const GlobalStyle = createGlobalStyle`
     gap: 2rem;
     opacity: 0.4;
     border-radius: 2rem 2rem 0 0;
-    background-color: ${(props) => props.color};
     transform: translateY(90%);
     transition: transform 0.4s ease-in-out;
   }
@@ -148,7 +137,6 @@ export const GlobalStyle = createGlobalStyle`
   .book-card h3,
   .hq-card h3 {
     font-size: 1.9rem;
-    color: ${(props) => props.color};
   }
   & .book-card h3,
   .hq-card h3 {
@@ -214,7 +202,10 @@ export const GlobalStyle = createGlobalStyle`
   .hq-card .hq-modal .description h4,
   .movie-card .movie-modal .description h4 i,
   .serie-card .serie-modal .description h4 i,
-  .animation-card .animation-modal .description h4 i{
+  .animation-card .animation-modal .description h4 i,
+  .movie-card .movie-modal .description h4 span,
+  .serie-card .serie-modal .description h4 span,
+  .animation-card .animation-modal .description h4 span {
     font-size: 1.6rem;
     height: 2rem;
     text-align: center;

@@ -9,13 +9,7 @@ const SerieCard = ({serie}) => {
   const [openSerieModal, setOpenSerieModal] = useState(false);
 
   return (
-    <li
-      className="serie-card serie-item"
-      color={theme.color}
-      background={theme.background_general_color}
-      paragraph_color={theme.paragraph_color}
-      button={theme.background_header_footer_color}
-    >
+    <li className="serie-card serie-item">
       <div className="poster">
         <img src={imageUrl + serie.poster_path} alt={serie.name} />
         <h3>{serie.original_name}</h3>
@@ -30,13 +24,13 @@ const SerieCard = ({serie}) => {
       >
         <div className="serie-modal">
           <h3>
-            {serie.name} <br /> {serie.first_air_date}
+            {serie.name} <br /> <span>{serie.first_air_date}</span>
           </h3>
           <img src={imageUrl + serie.poster_path} alt={serie.name} />
           <div className="description">
             <h4>
               Avaliação Média -<i className="fa-solid fa-star"></i>
-              {serie.vote_average}
+              <span>{serie.vote_average}</span>
             </h4>
             <div className="sinopse">
               <p>{serie.overview}</p>
