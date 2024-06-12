@@ -35,7 +35,7 @@ const Div = styled.div`
   left: 0;
   right: 0;
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.4);
+  background-color: rgb(0, 0, 0, 0.6);
   z-index: 5;
 
   & .modal-style {

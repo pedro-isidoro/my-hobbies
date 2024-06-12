@@ -8,9 +8,9 @@ import { nextBookCard, prevBookCard } from "../../../js/booksArrowsFunction";
 
 const BookCard = () => {
   const { theme } = useContext(ThemeContext);
-  const [openBookModal, setopenBookModal] = useState(false);
   const [booksCards, setBooksCards] = useState([]);
-  const [actualBook, setActualBook] = useState("");
+  const [openBookModal, setopenBookModal] = useState(false);
+  const [actualBook, setActualBook] = useState({});
 
   useEffect(() => {
     setBooksCards(booksData);

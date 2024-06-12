@@ -8,9 +8,9 @@ import hqsData from "/src/json/favorite-hq.json";
 
 const HQCard = () => {
   const { theme } = useContext(ThemeContext);
-  const [openHQModal, setopenHQModal] = useState(false);
   const [hqsCards, setHqsCards] = useState([]);
-  const [actualHQ, setActualHQ] = useState('')
+  const [openHQModal, setopenHQModal] = useState(false);
+  const [actualHQ, setActualHQ] = useState({})
 
   useEffect(() => {
     setHqsCards(hqsData);
@@ -19,7 +19,6 @@ const HQCard = () => {
   function hqStates(hq){
     setopenHQModal(true);
     setActualHQ(hq)
-    // console.log(hq)
   }
 
   return (
