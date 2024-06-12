@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../../../contexts/Theme-context";
+import React, { useEffect, useState } from "react";
 import { Button } from "../../generic-button/GenericButton";
 import { Modal } from "../../generic-modal/GenericModal";
 import booksData from "/src/json/favorite-books.json";
@@ -7,7 +6,6 @@ import booksData from "/src/json/favorite-books.json";
 import { nextBookCard, prevBookCard } from "../../../js/booksArrowsFunction";
 
 const BookCard = () => {
-  const { theme } = useContext(ThemeContext);
   const [booksCards, setBooksCards] = useState([]);
   const [openBookModal, setopenBookModal] = useState(false);
   const [actualBook, setActualBook] = useState({});

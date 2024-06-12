@@ -1,11 +1,9 @@
-import React, { useContext, useState } from "react";
-import { ThemeContext } from "../../../contexts/Theme-context";
+import React, { useState } from "react";
 import { Modal } from "../../generic-modal/GenericModal";
 
 const imageUrl = import.meta.env.VITE_IMG;
 
 const SerieCard = ({serie}) => {
-  const { theme } = useContext(ThemeContext);
   const [openSerieModal, setOpenSerieModal] = useState(false);
 
   return (

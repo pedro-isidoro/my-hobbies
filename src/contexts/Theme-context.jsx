@@ -8,7 +8,7 @@ export const themes = {
     theme_color: "#1a2c32",
     paragraph_info_color: "#ddeff0",
     paragraph_color: "#ddeff0",
-    icon_color: "#92cace",
+    icon_color: "#54b9bd",
     icon_hover_color: "#1a2c32",
     box_shadow_color: "#5facb1",
     span_color: "#92cace",

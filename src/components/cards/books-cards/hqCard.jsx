@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../../../contexts/Theme-context";
+import React, { useEffect, useState } from "react";
 import { Button } from "../../generic-button/GenericButton";
 import { Modal } from "../../generic-modal/GenericModal";
 
@@ -7,7 +6,6 @@ import { nextHQCard, prevHQCard } from "../../../js/hqsArrowsFunction";
 import hqsData from "/src/json/favorite-hq.json";
 
 const HQCard = () => {
-  const { theme } = useContext(ThemeContext);
   const [hqsCards, setHqsCards] = useState([]);
   const [openHQModal, setopenHQModal] = useState(false);
   const [actualHQ, setActualHQ] = useState({})

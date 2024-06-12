@@ -1,11 +1,9 @@
-import React, { useContext, useState } from 'react'
-import { ThemeContext } from '../../../contexts/Theme-context';
+import React, { useState } from 'react'
 import { Modal } from '../../generic-modal/GenericModal';
 
 const imageUrl = import.meta.env.VITE_IMG
 
 const MovieCard = ({movie}) => {
-  const { theme } = useContext(ThemeContext);
     const [openMovieModal, setOpenMovieModal] = useState(false)
 
   return (
