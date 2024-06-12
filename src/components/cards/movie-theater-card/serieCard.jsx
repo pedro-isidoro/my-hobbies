@@ -18,7 +18,7 @@ const SerieCard = ({serie}) => {
     >
       <div className="poster">
         <img src={imageUrl + serie.poster_path} alt={serie.name} />
-        <h3>{serie.name}</h3>
+        <h3>{serie.original_name}</h3>
       </div>
       <div className="newMoreInfo">
         <p>Para mais Informações</p>

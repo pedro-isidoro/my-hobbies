@@ -27,7 +27,7 @@ export function MoviesAndSeries() {
   let series2 = useMoviesAndSeries(8302789, 2).dataList;
   let series3 = useMoviesAndSeries(8302789, 3).dataList;
   const allSeries = series1.concat(series2, series3);
-  // console.log(series1)
+  console.log(series1)
   
   let animation1 = useMoviesAndSeries(8302786, 1).dataList;
   let animation2 = useMoviesAndSeries(8302786, 2).dataList;

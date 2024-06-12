@@ -108,24 +108,11 @@ export const GlobalStyle = createGlobalStyle`
     transition: transform 0.4s ease-in-out;
   }
 
-  & .movie-card .newMoreInfo p,
-  .serie-card .newMoreInfo p,
-  .animation-card .newMoreInfo p,
-  .book-card .newMoreInfo p,
-  .hq-card .newMoreInfo p,
-  .movie-card .newMoreInfo Button,
-  .serie-card .newMoreInfo Button,
-  .animation-card .newMoreInfo Button,
-  .book-card .newMoreInfo Button,
-  .hq-card .newMoreInfo Button {
-    color: white;
-  }
-
-  & .movie-card .newMoreInfo Button,
-  .serie-card .newMoreInfo Button,
-  .animation-card .newMoreInfo Button,
-  .book-card .newMoreInfo Button,
-  .hq-card .newMoreInfo Button {
+  & .movie-card .newMoreInfo button,
+  .serie-card .newMoreInfo button,
+  .animation-card .newMoreInfo button,
+  .book-card .newMoreInfo button,
+  .hq-card .newMoreInfo button {
     width: 60%;
     height: 3rem;
     border-radius: 25rem;

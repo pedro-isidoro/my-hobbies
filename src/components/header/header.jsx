@@ -9,6 +9,12 @@ export function Header(){
   // console.log("Themes: ", themes)
   // console.log("Theme: ", theme)
 
+  function swithIcon(){
+    const icon = document.querySelector("#header-icon");
+    icon.classList.toggle("fa-sun");
+    icon.classList.toggle("fa-moon");
+  }
+
   return (
     <Cabecalho
       color={theme.color}
@@ -27,9 +33,10 @@ export function Header(){
           // Setando o tema a partir do clique
           setTheme(theme === themes.light ? themes.dark : themes.light);
           // console.log("Tema Atual: ", theme);
+          swithIcon();
         }}
       >
-        <i className="fa-solid fa-sun"></i>
+        <i className="fa-solid fa-sun" id="header-icon"></i>
       </a>
     </Cabecalho>
   );

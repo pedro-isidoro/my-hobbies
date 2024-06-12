@@ -43,18 +43,23 @@ export const BooksSection = styled.section`
   }
 
   & .book-slider .newMoreInfo p,
-  .hq-slider .newMoreInfo p,
-  .book-slider .newMoreInfo Button,
-  .hq-slider .newMoreInfo Button {
+  .hq-slider .newMoreInfo p {
     color: white;
   }
 
-  & .book-slider .newMoreInfo Button,
-  .hq-slider .newMoreInfo Button {
-    cursor: pointer;
+  & .book-slider .newMoreInfo button,
+  .hq-slider .newMoreInfo button {
     color: ${(props) => props.color};
     background-color: ${(props) => props.button};
     border: 0.1rem solid ${(props) => props.color};
+  }
+
+  & .book-slider .newMoreInfo button:hover,
+  .hq-slider .newMoreInfo button:hover {
+    cursor: pointer;
+    background-color: #ababab;
+    color: #fff;
+    border-color: #fff;
   }
 
   & .book-card h3,
@@ -78,10 +83,10 @@ export const BooksSection = styled.section`
     font-size: 1.6rem;
     color: ${(props) => props.icon_hover_color};
   }
-    
-    & .book-card .book-modal .description .sinopse::-webkit-scrollbar-thumb,
-    .hq-card .hq-modal .description .sinopse::-webkit-scrollbar-thumb {
-      background-color: ${(props) => props.paragraph_color};
+
+  & .book-card .book-modal .description .sinopse::-webkit-scrollbar-thumb,
+  .hq-card .hq-modal .description .sinopse::-webkit-scrollbar-thumb {
+    background-color: ${(props) => props.paragraph_color};
   }
 
   & .book-card .book-modal .description .sinopse p,

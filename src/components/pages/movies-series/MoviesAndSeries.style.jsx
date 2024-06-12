@@ -50,20 +50,25 @@ export const CinephiliaSection = styled.section`
 
   & .movie-card .newMoreInfo p,
   .serie-card .newMoreInfo p,
-  .animation-card .newMoreInfo p,
-  .movie-card .newMoreInfo Button,
-  .serie-card .newMoreInfo Button,
-  .animation-card .newMoreInfo Button {
+  .animation-card .newMoreInfo p {
     color: white;
   }
 
-  & .movie-card .newMoreInfo Button,
-  .serie-card .newMoreInfo Button,
-  .animation-card .newMoreInfo Button {
-    cursor: pointer;
+  & .movie-card .newMoreInfo button,
+  .serie-card .newMoreInfo button,
+  .animation-card .newMoreInfo button {
     color: ${(props) => props.color};
     background-color: ${(props) => props.button};
     border: 0.1rem solid ${(props) => props.color};
+  }
+
+  & .movie-card .newMoreInfo button:hover,
+  .serie-card .newMoreInfo button:hover,
+  .animation-card .newMoreInfo button:hover {
+    cursor: pointer;
+    background-color: #ababab;
+    color: #fff;
+    border-color: #fff;
   }
 
   & .movie-card h3,

@@ -18,7 +18,7 @@ const AnimationCard = ({ animation }) => {
     >
       <div className="poster">
         <img src={imageUrl + animation.poster_path} alt={animation.title} />
-        <h3>{animation.title}</h3>
+        <h3>{animation.original_title}</h3>
       </div>
       <div className="newMoreInfo">
         <p>Para mais Informações</p>
