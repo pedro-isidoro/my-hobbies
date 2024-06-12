@@ -117,6 +117,12 @@ const Div = styled.div`
     }
   }
 
+  @media (max-width: 417px) {
+    & .modal-style .close-modal i {
+      padding-left: 1rem;
+    }
+  }
+
   @media (max-width: 361px) {
     & .modal-style {
       height: 60rem;

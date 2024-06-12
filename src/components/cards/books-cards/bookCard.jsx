@@ -63,7 +63,7 @@ const BookCard = () => {
             </li>
           ))
         ) : (
-          <p>Carregando...</p>
+          <p className="loading">Carregando...</p>
         )}
       </ul>
       <Button className="next" onClick={prevBookCard}>

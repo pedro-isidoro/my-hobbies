@@ -60,6 +60,14 @@ export const GlobalStyle = createGlobalStyle`
     overflow: hidden;
     gap: 2rem;
   }
+  
+  & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    font-size: 2rem;
+    text-align: center;
+  }
 
   & .movie-card,
   .serie-card,
@@ -263,6 +271,69 @@ export const GlobalStyle = createGlobalStyle`
     text-align: justify;
   }
 
+  @media (max-width: 1920px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 72.5rem;
+  }
+  }
+  
+  @media (max-width: 1537px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 55rem;
+  }
+  }
+  
+  @media (max-width: 1327px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 45rem;
+  }
+  }
+  
+  @media (max-width: 835px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 23.5rem;
+  }
+  }
+  
+  @media (max-width: 769px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 21rem;
+  }
+  }
+  
+  @media (max-width: 602px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 13.5rem;
+  }
+  }
+  
+  @media (max-width: 426px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 6rem;
+  }
+  }
+
   @media (max-width: 417px) {
     & .viewedMovies,
     .viewedSeries,
@@ -303,8 +374,52 @@ export const GlobalStyle = createGlobalStyle`
     .book-card .book-modal .description .sinopse,
     .hq-card .hq-modal .description .sinopse {
       height: 12rem;
-      width: 90%;
+      width: 95%;
       overflow-y: auto;
     }
+
+    & .movie-card .movie-modal .description .sinopse p,
+  .serie-card .serie-modal .description .sinopse p,
+  .animation-card .animation-modal .description .sinopse p,
+  .book-card .book-modal .description .sinopse p,
+  .hq-card .hq-modal .description .sinopse p {
+    font-size: 1.7rem;
+  }
+  }
+
+  @media (max-width: 493px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 5rem;
+  }
+  }
+  
+  @media (max-width: 376px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 3.5rem;
+  }
+  }
+  
+  @media (max-width: 332px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 2rem;
+  }
+  }
+
+  @media (max-width: 329px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 2rem;
+  }
   }
 `;

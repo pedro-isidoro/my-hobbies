@@ -146,7 +146,9 @@ export const BooksSection = styled.section`
     }
 
     & .book-card .book-modal h3,
-    .hq-card .hq-modal h3 {
+    .hq-card .hq-modal h3,
+    .book-card .book-modal h3 span,
+    .hq-card .hq-modal h3 span {
       font-size: 1.8rem;
     }
 
@@ -190,6 +192,11 @@ export const BooksSection = styled.section`
 
   /* Meu cell fica entre 361px e 344px */
   @media (max-width: 361px) {
+    & .BooksRead,
+    .BooksToRead {
+      height: 41rem;
+    }
+
     & .BooksRead img,
     .BooksToRead img {
       width: 15rem;
@@ -197,12 +204,12 @@ export const BooksSection = styled.section`
 
     & .book-card img,
     .hq-card img {
-      height: 20rem;
+      height: 24rem;
     }
 
     & .book-card,
     .hq-card {
-      left: 2rem;
+      left: 1rem;
     }
   }
 

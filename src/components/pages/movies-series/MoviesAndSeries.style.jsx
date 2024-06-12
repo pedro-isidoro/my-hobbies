@@ -152,6 +152,12 @@ export const CinephiliaSection = styled.section`
     .animation-card {
       padding-left: 0rem;
     }
+
+    & .movie-card .movie-modal h3 span,
+    .serie-card .serie-modal h3 span,
+    .animation-card .animation-modal h3 span {
+      font-size: 1.8rem;
+    }
   }
 
   @media (max-width: 371px) {
@@ -176,10 +182,24 @@ export const CinephiliaSection = styled.section`
       height: 42rem;
     }
 
+    & .movie-card,
+    .serie-card,
+    .animation-card {
+      left: 2rem;
+    }
+
     & .movie-card img,
     .serie-card img,
     .animation-card img {
       width: 16rem;
+    }
+  }
+
+  @media (max-width: 351px) {
+    & .movie-card,
+    .serie-card,
+    .animation-card {
+      left: 1rem;
     }
   }
 
