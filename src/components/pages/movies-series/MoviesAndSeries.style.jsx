@@ -112,19 +112,19 @@ export const CinephiliaSection = styled.section`
   @media (max-width: 412px) {
     & .viewedMovies,
     .viewedSeries,
-    .viewedAnimations{
-      height: 42rem;
+    .viewedAnimations {
+      height: 45rem;
     }
 
     & .movie-card,
     .serie-card,
-    .animation-card{
+    .animation-card {
       padding-left: 2rem;
     }
 
     & .movie-card img,
     .serie-card img,
-    .animation-card img{
+    .animation-card img {
       width: 19rem;
     }
   }
@@ -132,7 +132,7 @@ export const CinephiliaSection = styled.section`
   @media (max-width: 400px) {
     & .movie-card,
     .serie-card,
-    .animation-card{
+    .animation-card {
       padding-left: 0rem;
     }
   }
@@ -140,22 +140,28 @@ export const CinephiliaSection = styled.section`
   @media (max-width: 371px) {
     & .viewedMovies,
     .viewedSeries,
-    .viewedAnimations{
-      height: 39rem;
+    .viewedAnimations {
+      height: 42rem;
     }
 
     & .movie-card img,
     .serie-card img,
-    .animation-card img{
+    .animation-card img {
       width: 17.5rem;
     }
   }
 
   /* Meu cell fica entre 361px e 344px */
   @media (max-width: 361px) {
+    & .viewedMovies,
+    .viewedSeries,
+    .viewedAnimations {
+      height: 42rem;
+    }
+
     & .movie-card img,
     .serie-card img,
-    .animation-card img{
+    .animation-card img {
       width: 16rem;
     }
   }
@@ -169,7 +175,7 @@ export const CinephiliaSection = styled.section`
 
     & .movie-card img,
     .serie-card img,
-    .animation-card img{
+    .animation-card img {
       width: 13rem;
     }
   }

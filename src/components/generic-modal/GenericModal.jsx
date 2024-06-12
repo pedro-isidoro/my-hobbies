@@ -35,7 +35,7 @@ const Div = styled.div`
   left: 0;
   right: 0;
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0, 0.7);
   z-index: 5;
 
   & .modal-style {
@@ -49,7 +49,7 @@ const Div = styled.div`
     font-size: 2rem;
     border-radius: 1rem;
     background-color: ${(props) => props.background};
-    backdrop-filter: blur(0.3rem);
+    backdrop-filter: blur(0.5rem);
   }
 
   & .modal-style .close-modal {

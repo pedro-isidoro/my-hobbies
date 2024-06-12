@@ -15,7 +15,6 @@ const BookCard = () => {
   useEffect(() => {
     setBooksCards(booksData);
   }, []);
-  // console.log(booksData);
 
   function bookStates(book) {
     setopenBookModal(true);

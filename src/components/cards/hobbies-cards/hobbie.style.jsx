@@ -177,6 +177,10 @@ export const CardsSection = styled.section`
   }
 
   @media (max-width: 1171px) {
+    & .slide .item {
+      transition: linear 2s ease-in-out;
+    }
+
     & .slide .item:nth-child(6) {
       right: 46%;
     }
@@ -203,7 +207,6 @@ export const CardsSection = styled.section`
       width: 8rem;
       height: 6rem;
       top: 94%;
-      transition: linear 2s ease-in-out;
     }
 
     & .slide .item:nth-child(6) {
