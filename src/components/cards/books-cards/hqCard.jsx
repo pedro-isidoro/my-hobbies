@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "../../generic-button/GenericButton";
-import { Modal } from "../../generic-modal/GenericModal";
+import { BooksModal } from "../../modal/booksModal";
 
 import { nextHQCard, prevHQCard } from "../../../js/hqsArrowsFunction";
 import hqsData from "/src/json/favorite-hq.json";
@@ -36,7 +36,7 @@ const HQCard = () => {
                 <p>Para mais Informações</p>
                 <button onClick={() => hqStates(hq)}>Click!</button>
               </div>
-              <Modal
+              <BooksModal
                 isOpen={openHQModal}
                 setModalClosed={() => setopenHQModal(!openHQModal)}
               >
@@ -57,7 +57,7 @@ const HQCard = () => {
                     </div>
                   </div>
                 </div>
-              </Modal>
+              </BooksModal>
             </li>
           ))
         ) : (

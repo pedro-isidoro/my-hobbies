@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Modal } from '../../generic-modal/GenericModal';
+import { Modal } from '../../modal/GenericModal';
 
 const imageUrl = import.meta.env.VITE_IMG
 

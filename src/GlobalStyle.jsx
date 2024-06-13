@@ -289,6 +289,15 @@ export const GlobalStyle = createGlobalStyle`
   }
   }
   
+  @media (max-width: 1441px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 50rem;
+  }
+  }
+  
   @media (max-width: 1327px){
     & .viewedMovies .movie-slider .card .loading,
   .viewedSeries .serie-slider .card .loading,
@@ -402,6 +411,33 @@ export const GlobalStyle = createGlobalStyle`
   .viewedAnimations .animation-slider .card .loading,
   .book-slider .card .loading, .hq-slider .card .loading {
     padding-left: 3.5rem;
+  }
+  }
+  
+  @media (max-width: 361px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 3.5rem;
+  }
+  }
+  
+  @media (max-width: 357px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 3.2rem;
+  }
+  }
+  
+  @media (max-width: 345px){
+    & .viewedMovies .movie-slider .card .loading,
+  .viewedSeries .serie-slider .card .loading,
+  .viewedAnimations .animation-slider .card .loading,
+  .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 3rem;
   }
   }
   

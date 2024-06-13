@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../contexts/Theme-context";
-import { Modal } from "../generic-modal/GenericModal";
+import { Modal } from "../modal/GenericModal";
 import { InfoSection } from "./info.style";
 
 export function InfoCard() {

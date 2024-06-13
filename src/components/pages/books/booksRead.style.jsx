@@ -192,11 +192,6 @@ export const BooksSection = styled.section`
 
   /* Meu cell fica entre 361px e 344px */
   @media (max-width: 361px) {
-    & .BooksRead,
-    .BooksToRead {
-      height: 41rem;
-    }
-
     & .BooksRead img,
     .BooksToRead img {
       width: 15rem;
