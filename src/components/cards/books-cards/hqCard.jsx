@@ -36,34 +36,34 @@ const HQCard = () => {
                 <p>Para mais Informações</p>
                 <button onClick={() => hqStates(hq)}>Click!</button>
               </div>
-              <BooksModal
-                isOpen={openHQModal}
-                setModalClosed={() => setopenHQModal(!openHQModal)}
-              >
-                <div className="hq-modal">
-                  <h3>
-                    {actualHQ.name} <br /> <span>{actualHQ.release_date}</span>
-                  </h3>
-                  <img src={actualHQ.url} alt={actualHQ.name} />
-                  <div className="description">
-                    <h4 className="author">
-                      Autor: <span>{actualHQ.author}</span>
-                    </h4>
-                    <h4 className="gener">
-                      Gênero: <span>{actualHQ.genre}</span>
-                    </h4>
-                    <div className="sinopse">
-                      <p>{actualHQ.sinopse}</p>
-                    </div>
-                  </div>
-                </div>
-              </BooksModal>
             </li>
           ))
         ) : (
           <p className="loading">Carregando...</p>
         )}
       </ul>
+      <BooksModal
+        isOpen={openHQModal}
+        setModalClosed={() => setopenHQModal(!openHQModal)}
+      >
+        <div className="hq-modal">
+          <h3>
+            {actualHQ.name} <br /> <span>{actualHQ.release_date}</span>
+          </h3>
+          <img src={actualHQ.url} alt={actualHQ.name} />
+          <div className="description">
+            <h4 className="author">
+              Autor: <span>{actualHQ.author}</span>
+            </h4>
+            <h4 className="gener">
+              Gênero: <span>{actualHQ.genre}</span>
+            </h4>
+            <div className="sinopse">
+              <p>{actualHQ.sinopse}</p>
+            </div>
+          </div>
+        </div>
+      </BooksModal>
       <Button className="next" onClick={prevHQCard}>
         <i className="fa-solid fa-arrow-right-long" onClick={prevHQCard}></i>
       </Button>

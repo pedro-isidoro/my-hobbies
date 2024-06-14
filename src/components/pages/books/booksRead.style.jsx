@@ -67,41 +67,6 @@ export const BooksSection = styled.section`
     color: ${(props) => props.color};
   }
 
-  & .book-card .book-modal h3,
-  .hq-card .hq-modal h3,
-  .book-card .book-modal h3 span,
-  .hq-card .hq-modal h3 span {
-    font-size: 2rem;
-    color: ${(props) => props.paragraph_color};
-  }
-
-  & .book-card .book-modal .description h4,
-  .hq-card .hq-modal .description h4 {
-    color: ${(props) => props.paragraph_color};
-  }
-
-  & .book-card .book-modal .description span,
-  .hq-card .hq-modal .description span {
-    font-size: 1.6rem;
-  }
-
-  & .book-card .book-modal .description span,
-  .hq-card .hq-modal .description span,
-  .book-card .book-modal h3 span,
-  .hq-card .hq-modal h3 span {
-    color: ${(props) => props.span};
-  }
-
-  & .book-card .book-modal .description .sinopse::-webkit-scrollbar-thumb,
-  .hq-card .hq-modal .description .sinopse::-webkit-scrollbar-thumb {
-    background-color: ${(props) => props.paragraph_color};
-  }
-
-  & .book-card .book-modal .description .sinopse p,
-  .hq-card .hq-modal .description .sinopse p {
-    color: ${(props) => props.paragraph_color};
-  }
-
   @media (max-width: 416px) {
     & .BooksRead,
     .BooksToRead {
@@ -114,7 +79,9 @@ export const BooksSection = styled.section`
     }
 
     & .book-card img,
-    .hq-card img {
+    .hq-card img,
+    .modal-info .book-modal img,
+    .modal-info .hq-modal img {
       width: 19rem;
     }
 
@@ -124,7 +91,9 @@ export const BooksSection = styled.section`
     }
 
     & .book-card img,
-    .hq-card img {
+    .hq-card img,
+    .modal-info .book-modal img,
+    .modal-info .hq-modal img {
       height: 24rem;
     }
   }
@@ -141,31 +110,33 @@ export const BooksSection = styled.section`
     }
 
     & .book-card img,
-    .hq-card img {
+    .hq-card img,
+    .modal-info .book-modal img,
+    .modal-info .hq-modal img {
       height: 24rem;
     }
 
-    & .book-card .book-modal h3,
-    .hq-card .hq-modal h3,
-    .book-card .book-modal h3 span,
-    .hq-card .hq-modal h3 span {
+    & .modal-info .book-modal h3,
+    .modal-info .hq-modal h3,
+    .modal-info .book-modal h3 span,
+    .modal-info .hq-modal h3 span {
       font-size: 1.8rem;
     }
 
-    & .book-card .book-modal .description h4,
-    .hq-card .hq-modal .description h4,
-    & .book-card .book-modal .description span,
-    .hq-card .hq-modal .description span {
+    & .modal-info .book-modal .description h4,
+    .modal-info .hq-modal .description h4,
+    .modal-info .book-modal .description span,
+    .modal-info .hq-modal .description span {
       font-size: 1.4rem;
     }
 
-    & .book-card .book-modal .description h4.gener,
-    .hq-card .hq-modal .description h4.gener {
+    & .modal-info .book-modal .description h4.gener,
+    .modal-info .hq-modal .description h4.gener {
       margin-bottom: 3rem;
     }
 
-    & .book-card .book-modal .description p,
-    .hq-card .hq-modal .description p {
+    & .modal-info .book-modal .description p,
+    .modal-info .hq-modal .description p {
       font-size: 1.4rem;
       height: 18rem;
     }
@@ -198,7 +169,9 @@ export const BooksSection = styled.section`
     }
 
     & .book-card img,
-    .hq-card img {
+    .hq-card img,
+    .modal-info .book-modal img,
+    .modal-info .hq-modal img {
       height: 24rem;
     }
 
@@ -220,7 +193,9 @@ export const BooksSection = styled.section`
     }
 
     & .book-card img,
-    .hq-card img {
+    .hq-card img,
+    .modal-info .book-modal img,
+    .modal-info .hq-modal img {
       height: 16rem;
     }
   }

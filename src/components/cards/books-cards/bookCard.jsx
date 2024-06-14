@@ -17,6 +17,7 @@ const BookCard = () => {
   function bookStates(book) {
     setopenBookModal(true);
     setActualBook(book);
+    // console.log(book)
   }
 
   return (
@@ -36,36 +37,36 @@ const BookCard = () => {
                 <p>Para mais Informações</p>
                 <button onClick={() => bookStates(book)}>Click!</button>
               </div>
-              <BooksModal
-                isOpen={openBookModal}
-                setModalClosed={() => setopenBookModal(!openBookModal)}
-                className="bookModal"
-              >
-                <div className="book-modal">
-                  <h3>
-                    {actualBook.name} <br />
-                    <span>{actualBook.release_date}</span>
-                  </h3>
-                  <img src={actualBook.url} alt={actualBook.name} />
-                  <div className="description">
-                    <h4 className="author">
-                      Autor: <span>{actualBook.author}</span>
-                    </h4>
-                    <h4 className="gener">
-                      Gênero: <span>{actualBook.genre}</span>
-                    </h4>
-                    <div className="sinopse">
-                      <p>{actualBook.sinopse}</p>
-                    </div>
-                  </div>
-                </div>
-              </BooksModal>
             </li>
           ))
         ) : (
           <p className="loading">Carregando...</p>
         )}
       </ul>
+      <BooksModal
+        isOpen={openBookModal}
+        setModalClosed={() => setopenBookModal(!openBookModal)}
+        className="bookModal"
+      >
+        <div className="book-modal">
+          <h3>
+            {actualBook.name} <br />
+            <span>{actualBook.release_date}</span>
+          </h3>
+          <img src={actualBook.url} alt={actualBook.name} />
+          <div className="description">
+            <h4 className="author">
+              Autor: <span>{actualBook.author}</span>
+            </h4>
+            <h4 className="gener">
+              Gênero: <span>{actualBook.genre}</span>
+            </h4>
+            <div className="sinopse">
+              <p>{actualBook.sinopse}</p>
+            </div>
+          </div>
+        </div>
+      </BooksModal>
       <Button className="next" onClick={prevBookCard}>
         <i className="fa-solid fa-arrow-right-long" onClick={prevBookCard}></i>
       </Button>

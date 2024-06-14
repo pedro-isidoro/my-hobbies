@@ -34,7 +34,7 @@ const Div = styled.div`
   left: 0;
   right: 0;
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.1);
+  background-color: rgb(0, 0, 0, 0.75);
   z-index: 5;
 
   & .modal-style {
@@ -48,7 +48,7 @@ const Div = styled.div`
     font-size: 2rem;
     border-radius: 1rem;
     background-color: ${(props) => props.background};
-    backdrop-filter: blur(0.2rem);
+    backdrop-filter: blur(0.5rem);
   }
 
   & .modal-style .close-modal {
@@ -76,35 +76,59 @@ const Div = styled.div`
     gap: 1rem;
   }
 
-  & .modal-style .modal-info iframe {
-    width: 90%;
-    height: 50rem;
-    border: 0.1rem solid black;
-    border-radius: 1rem;
+  & .modal-info .book-modal h3,
+  .modal-info .hq-modal h3,
+  .modal-info .book-modal h3 span,
+  .modal-info .hq-modal h3 span {
+    font-size: 1.8rem;
   }
 
-  & .modal-style .modal-info p {
-    width: 80%;
-    text-align: center;
+  & .modal-info .book-modal .description h4,
+  .modal-info .hq-modal .description h4,
+  .modal-info .book-modal .description span,
+  .modal-info .hq-modal .description span {
+    font-size: 1.4rem;
+  }
+
+  & .modal-info .book-modal .description h4.gener,
+  .modal-info .hq-modal .description h4.gener {
+    margin-bottom: 3rem;
+  }
+
+  & .modal-info .book-modal h3,
+  .modal-info .hq-modal h3,
+  .modal-info .book-modal h3 span,
+  .modal-info .hq-modal h3 span {
     font-size: 2rem;
     color: ${(props) => props.paragraph_color};
   }
 
-  & .modal-style .modal-info .closedButton {
-    width: 110px;
-    height: 28px;
-    border-radius: 25rem;
-    font-size: 1.6rem;
-    color: ${(props) => props.color};
-    background-color: ${(props) => props.button};
-    border: 0.1rem solid ${(props) => props.color};
+  & .modal-info .book-modal .description h4,
+  .modal-info .hq-modal .description h4 {
+    color: ${(props) => props.paragraph_color};
   }
 
-  & .modal-style .modal-info .closedButton:hover {
-    cursor: pointer;
-    background-color: #ababab;
-    color: #fff;
-    border-color: #fff;
+  & .modal-info .book-modal .description span,
+  .modal-info .hq-modal .description span {
+    font-size: 1.6rem;
+  }
+
+  & .modal-info .book-modal .description span,
+  .modal-info .hq-modal .description span,
+  .modal-info .book-modal h3 span,
+  .modal-info .hq-modal h3 span {
+    color: ${(props) => props.span};
+  }
+
+  & .modal-info .book-modal .description .sinopse::-webkit-scrollbar-thumb,
+  .modal-info .hq-modal .description .sinopse::-webkit-scrollbar-thumb {
+    background-color: ${(props) => props.paragraph_color};
+  }
+
+  & .modal-info .book-modal .description .sinopse p,
+  .modal-info .hq-modal .description .sinopse p {
+    color: ${(props) => props.paragraph_color};
+    height: 18rem;
   }
 
   @media (max-width: 601px) {

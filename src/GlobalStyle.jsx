@@ -129,13 +129,16 @@ export const GlobalStyle = createGlobalStyle`
   .serie-card img,
   .animation-card img,
   .book-card img,
-  .hq-card  img{
+  .hq-card  img, 
+  .modal-info .book-modal img,
+  .modal-info .hq-modal img{
     width: 18.5rem;
     margin-bottom: 0.8rem;
   }
 
   & .book-card img,
-  .hq-card  img {
+  .hq-card  img, .modal-info .book-modal img,
+  .modal-info .hq-modal img {
     height: 28rem;
   }
 
@@ -146,6 +149,7 @@ export const GlobalStyle = createGlobalStyle`
   .hq-card h3 {
     font-size: 1.9rem;
   }
+
   & .book-card h3,
   .hq-card h3 {
     font-size: 1.8rem;
@@ -165,8 +169,8 @@ export const GlobalStyle = createGlobalStyle`
   & .movie-card .movie-modal,
   .serie-card .serie-modal,
   .animation-card .animation-modal,
-  .book-card .book-modal,
-  .hq-card .hq-modal {
+  .modal-info .book-modal,
+  .modal-info .hq-modal {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -174,40 +178,41 @@ export const GlobalStyle = createGlobalStyle`
     gap: 2rem;
   }
   
-  & .book-card .book-modal img,
-  .hq-card .hq-modal img {
+  & .modal-info .book-modal img,
+  .modal-info .hq-modal img {
     margin-bottom: 0;
   }
 
   & .movie-card .movie-modal .description,
   .serie-card .serie-modal .description,
   .animation-card .animation-modal .description,
-  .book-card .book-modal .description,
-  .hq-card .hq-modal .description {
+  .modal-info .book-modal .description,
+  .modal-info .hq-modal .description {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
   }
   
-  & .book-card .book-modal .description,
-  .hq-card .hq-modal .description {
+  & .modal-info .book-modal .description,
+  .modal-info .hq-modal .description {
     gap: 0;
   }
 
   & .movie-card .movie-modal h3,
   .serie-card .serie-modal h3,
   .animation-card .animation-modal h3,
-  .book-card .book-modal h3,
-  .hq-card .hq-modal h3 {
+  .modal-info .book-modal h3,
+  .modal-info .hq-modal h3 {
     font-size: 2rem;
+    text-align: center;
   }
 
   & .movie-card .movie-modal .description h4,
   .serie-card .serie-modal .description h4,
   .animation-card .animation-modal .description h4,
-  .book-card .book-modal .description h4,
-  .hq-card .hq-modal .description h4,
+  .modal-info .book-modal .description h4,
+  .modal-info .hq-modal .description h4,
   .movie-card .movie-modal .description h4 i,
   .serie-card .serie-modal .description h4 i,
   .animation-card .animation-modal .description h4 i,
@@ -226,16 +231,16 @@ export const GlobalStyle = createGlobalStyle`
     color: yellow;
   }
 
-  & .book-card .book-modal .description h4.gener,
-  .hq-card .hq-modal .description h4.gener{
+  & .modal-info .book-modal .description h4.gener,
+  .modal-info .hq-modal .description h4.gener{
     margin-bottom: 1rem;
   }
 
   & .movie-card .movie-modal .description .sinopse,
   .serie-card .serie-modal .description .sinopse,
   .animation-card .animation-modal .description .sinopse, 
-  .book-card .book-modal .description .sinopse,
-  .hq-card .hq-modal .description .sinopse {
+  .modal-info .book-modal .description .sinopse,
+  .modal-info .hq-modal .description .sinopse {
     height: 12rem;
     width: 80%;
     overflow-y: auto;
@@ -244,8 +249,8 @@ export const GlobalStyle = createGlobalStyle`
   & .movie-card .movie-modal .description .sinopse::-webkit-scrollbar,
   .serie-card .serie-modal .description .sinopse::-webkit-scrollbar,
   .animation-card .animation-modal .description .sinopse::-webkit-scrollbar,
-  .book-card .book-modal .description .sinopse::-webkit-scrollbar,
-  .hq-card .hq-modal .description .sinopse::-webkit-scrollbar {
+  .modal-info .book-modal .description .sinopse::-webkit-scrollbar,
+  .modal-info .hq-modal .description .sinopse::-webkit-scrollbar {
     width: 0.8rem;
     border-radius: 1rem;
     background-color: #00000039;
@@ -254,16 +259,16 @@ export const GlobalStyle = createGlobalStyle`
   & .movie-card .movie-modal .description .sinopse::-webkit-scrollbar-thumb,
   .serie-card .serie-modal .description .sinopse::-webkit-scrollbar-thumb,
   .animation-card .animation-modal .description .sinopse::-webkit-scrollbar-thumb,
-  .book-card .book-modal .description .sinopse::-webkit-scrollbar-thumb,
-  .hq-card .hq-modal .description .sinopse::-webkit-scrollbar-thumb {
+  .modal-info .book-modal .description .sinopse::-webkit-scrollbar-thumb,
+  .modal-info .hq-modal .description .sinopse::-webkit-scrollbar-thumb {
     border-radius: 1rem;
   }
 
   & .movie-card .movie-modal .description .sinopse p,
   .serie-card .serie-modal .description .sinopse p,
   .animation-card .animation-modal .description .sinopse p,
-  .book-card .book-modal .description .sinopse p,
-  .hq-card .hq-modal .description .sinopse p {
+  .modal-info .book-modal .description .sinopse p,
+  .modal-info .hq-modal .description .sinopse p {
     width: 100%;
     color: ${(props) => props.paragraph_color};
     padding: 0 1rem;
@@ -380,8 +385,8 @@ export const GlobalStyle = createGlobalStyle`
     & .movie-card .movie-modal .description .sinopse,
     .serie-card .serie-modal .description .sinopse,
     .animation-card .animation-modal .description .sinopse,
-    .book-card .book-modal .description .sinopse,
-    .hq-card .hq-modal .description .sinopse {
+    .modal-info .book-modal .description .sinopse,
+    .modal-info .hq-modal .description .sinopse {
       height: 12rem;
       width: 95%;
       overflow-y: auto;
@@ -390,8 +395,8 @@ export const GlobalStyle = createGlobalStyle`
     & .movie-card .movie-modal .description .sinopse p,
   .serie-card .serie-modal .description .sinopse p,
   .animation-card .animation-modal .description .sinopse p,
-  .book-card .book-modal .description .sinopse p,
-  .hq-card .hq-modal .description .sinopse p {
+  .modal-info .book-modal .description .sinopse p,
+  .modal-info .hq-modal .description .sinopse p {
     font-size: 1.7rem;
   }
   }
