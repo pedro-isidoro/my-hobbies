@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "../../generic-button/GenericButton";
-import { BooksModal } from "../../modal/booksModal";
+import { Modal } from "../../modal/GenericModal";
 import booksData from "/src/json/favorite-books.json";
 
 import { nextBookCard, prevBookCard } from "../../../js/booksArrowsFunction";
@@ -43,7 +43,7 @@ const BookCard = () => {
           <p className="loading">Carregando...</p>
         )}
       </ul>
-      <BooksModal
+      <Modal
         isOpen={openBookModal}
         setModalClosed={() => setopenBookModal(!openBookModal)}
         className="bookModal"
@@ -66,7 +66,7 @@ const BookCard = () => {
             </div>
           </div>
         </div>
-      </BooksModal>
+      </Modal>
       <Button className="next" onClick={prevBookCard}>
         <i className="fa-solid fa-arrow-right-long" onClick={prevBookCard}></i>
       </Button>

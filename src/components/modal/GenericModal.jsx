@@ -91,24 +91,7 @@ const Div = styled.div`
     font-size: 2rem;
     color: ${(props) => props.paragraph_color};
   }
-
-  & .modal-style .modal-info .closedButton {
-    width: 110px;
-    height: 28px;
-    border-radius: 25rem;
-    font-size: 1.6rem;
-    color: ${(props) => props.color};
-    background-color: ${(props) => props.button};
-    border: 0.1rem solid ${(props) => props.color};
-  }
-
-  & .modal-style .modal-info .closedButton:hover {
-    cursor: pointer;
-    background-color: #ababab;
-    color: #fff;
-    border-color: #fff;
-  }
-
+  
   @media (max-width: 601px) {
     & .modal-style {
       width: 90%;

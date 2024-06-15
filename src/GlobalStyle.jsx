@@ -177,11 +177,6 @@ export const GlobalStyle = createGlobalStyle`
     align-items: center;
     gap: 2rem;
   }
-  
-  & .modal-info .book-modal img,
-  .modal-info .hq-modal img {
-    margin-bottom: 0;
-  }
 
   & .movie-card .movie-modal .description,
   .serie-card .serie-modal .description,
@@ -192,20 +187,6 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-  }
-  
-  & .modal-info .book-modal .description,
-  .modal-info .hq-modal .description {
-    gap: 0;
-  }
-
-  & .movie-card .movie-modal h3,
-  .serie-card .serie-modal h3,
-  .animation-card .animation-modal h3,
-  .modal-info .book-modal h3,
-  .modal-info .hq-modal h3 {
-    font-size: 2rem;
-    text-align: center;
   }
 
   & .movie-card .movie-modal .description h4,
@@ -229,11 +210,6 @@ export const GlobalStyle = createGlobalStyle`
   .animation-card .animation-modal .description h4 i{
     margin: 0 0.5rem;
     color: yellow;
-  }
-
-  & .modal-info .book-modal .description h4.gener,
-  .modal-info .hq-modal .description h4.gener{
-    margin-bottom: 1rem;
   }
 
   & .movie-card .movie-modal .description .sinopse,
@@ -262,18 +238,6 @@ export const GlobalStyle = createGlobalStyle`
   .modal-info .book-modal .description .sinopse::-webkit-scrollbar-thumb,
   .modal-info .hq-modal .description .sinopse::-webkit-scrollbar-thumb {
     border-radius: 1rem;
-  }
-
-  & .movie-card .movie-modal .description .sinopse p,
-  .serie-card .serie-modal .description .sinopse p,
-  .animation-card .animation-modal .description .sinopse p,
-  .modal-info .book-modal .description .sinopse p,
-  .modal-info .hq-modal .description .sinopse p {
-    width: 100%;
-    color: ${(props) => props.paragraph_color};
-    padding: 0 1rem;
-    font-size: 1.9rem;
-    text-align: justify;
   }
 
   @media (max-width: 1920px){
@@ -393,12 +357,12 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     & .movie-card .movie-modal .description .sinopse p,
-  .serie-card .serie-modal .description .sinopse p,
-  .animation-card .animation-modal .description .sinopse p,
-  .modal-info .book-modal .description .sinopse p,
-  .modal-info .hq-modal .description .sinopse p {
+    .serie-card .serie-modal .description .sinopse p,
+    .animation-card .animation-modal .description .sinopse p,
+    .modal-info .book-modal .description .sinopse p,
+    .modal-info .hq-modal .description .sinopse p {
     font-size: 1.7rem;
-  }
+    }
   }
 
   @media (max-width: 493px){
