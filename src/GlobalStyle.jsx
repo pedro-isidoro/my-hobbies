@@ -251,10 +251,19 @@ export const GlobalStyle = createGlobalStyle`
   
   @media (max-width: 1537px){
     & .viewedMovies .movie-slider .card .loading,
+    .viewedSeries .serie-slider .card .loading,
+    .viewedAnimations .animation-slider .card .loading,
+    .book-slider .card .loading, .hq-slider .card .loading {
+    padding-left: 55rem;
+    }
+  }
+  
+  @media (max-width: 1496px){
+    & .viewedMovies .movie-slider .card .loading,
   .viewedSeries .serie-slider .card .loading,
   .viewedAnimations .animation-slider .card .loading,
   .book-slider .card .loading, .hq-slider .card .loading {
-    padding-left: 55rem;
+    padding-left: 53rem;
   }
   }
   
@@ -397,7 +406,7 @@ export const GlobalStyle = createGlobalStyle`
   .viewedSeries .serie-slider .card .loading,
   .viewedAnimations .animation-slider .card .loading,
   .book-slider .card .loading, .hq-slider .card .loading {
-    padding-left: 3.2rem;
+    padding-left: 3.4rem;
   }
   }
   
