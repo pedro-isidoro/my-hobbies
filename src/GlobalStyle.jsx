@@ -189,6 +189,17 @@ export const GlobalStyle = createGlobalStyle`
     gap: 2rem;
   }
 
+  & .movie-card .movie-modal .description .sinopse p,
+  .serie-card .serie-modal .description .sinopse p,
+  .animation-card .animation-modal .description .sinopse p,
+  .modal-info .book-modal .description .sinopse p,
+  .modal-info .hq-modal .description .sinopse p {
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.9rem;
+    text-align: justify;
+  }
+
   & .movie-card .movie-modal .description h4,
   .serie-card .serie-modal .description h4,
   .animation-card .animation-modal .description h4,
@@ -406,8 +417,24 @@ export const GlobalStyle = createGlobalStyle`
   .viewedSeries .serie-slider .card .loading,
   .viewedAnimations .animation-slider .card .loading,
   .book-slider .card .loading, .hq-slider .card .loading {
-    padding-left: 3.4rem;
+    padding-left: 3.3rem;
   }
+
+    & .movie-card h3,
+    .serie-card h3,
+    .animation-card h3,
+    .book-card h3,
+    .hq-card h3 {
+      font-size: 1.5rem;
+    }
+
+    & .movie-card .movie-modal .description .sinopse p,
+    .serie-card .serie-modal .description .sinopse p,
+    .animation-card .animation-modal .description .sinopse p,
+    .modal-info .book-modal .description .sinopse p,
+    .modal-info .hq-modal .description .sinopse p {
+      font-size: 1.7rem;
+    }
   }
   
   @media (max-width: 345px){

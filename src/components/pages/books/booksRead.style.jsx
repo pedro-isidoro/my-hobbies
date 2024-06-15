@@ -100,17 +100,6 @@ export const BooksSection = styled.section`
     margin-bottom: 1.5rem;
   }
 
-  & .movie-card .movie-modal .description .sinopse p,
-  .serie-card .serie-modal .description .sinopse p,
-  .animation-card .animation-modal .description .sinopse p,
-  .modal-info .book-modal .description .sinopse p,
-  .modal-info .hq-modal .description .sinopse p {
-    width: 100%;
-    padding: 0 1rem;
-    font-size: 1.9rem;
-    text-align: justify;
-  }
-
   & .modal-info .book-modal .description .sinopse p,
   .modal-info .hq-modal .description .sinopse p {
     height: 18rem;
@@ -250,6 +239,11 @@ export const BooksSection = styled.section`
 
   /* Meu cell fica entre 361px e 344px */
   @media (max-width: 361px) {
+    & .BooksRead,
+    .BooksToRead {
+      height: 44rem;
+    }
+
     & .BooksRead img,
     .BooksToRead img,
     .modal-info .book-modal img,
