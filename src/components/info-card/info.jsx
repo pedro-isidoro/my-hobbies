@@ -11,15 +11,12 @@ export function InfoCard() {
       <InfoSection
         color={theme.color}
         background={theme.background_general_color}
-        paragraph_color={theme.paragraph_color}
+        icon_color={theme.icon_color}
         button={theme.background_header_footer_color}
       >
         <h2 className="title">Sobre Mim</h2>
         <div className="info">
-          <img
-            src="/images/info/me-dreamWorks.webp"
-            alt="IA Image about me"
-          />
+          <img src="/images/info/me-dreamWorks.webp" alt="IA Image about me" />
           <div className="info-text">
             <p>
               Me chamo Pedro Isidoro, tenho 20 anos. Sou um estudante de TI e

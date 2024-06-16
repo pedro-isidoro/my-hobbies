@@ -59,9 +59,9 @@ export const InfoSection = styled.section`
     height: 28px;
     border-radius: 25rem;
     font-size: 1.6rem;
-    color: ${(props) => props.color};
+    color: ${(props) => props.icon_color};
     background-color: ${(props) => props.button};
-    border: 0.1rem solid ${(props) => props.color};
+    border: 0.1rem solid ${(props) => props.icon_color};
   }
 
   & .info .info-text button:hover {
@@ -88,7 +88,7 @@ export const InfoSection = styled.section`
       width: 36rem;
     }
   }
-  
+
   @media (max-width: 426px) {
     & .info .info-text p {
       text-align: justify;
