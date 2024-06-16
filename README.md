@@ -12,7 +12,7 @@
         Documentação<br/>
     - <a href="#sinopse">Sinopse</a><br/>
     - <a href="#execution">Execução</a><br/>
-    - <a href="#documentacao">Documentação</a>
+    - <a href="#documentacao">Documentação</a><br/>
     - <a href="#fetch-api">Chamada de API</a>
     </li>
     <li>
