@@ -30,7 +30,7 @@ const HQCard = () => {
             <li className="hq-card hq-item" key={index}>
               <div className="poster">
                 <img src={hq.url} alt={hq.name} />
-                <h3>{hq.name}</h3>
+                <h3>{hq.original_name}</h3>
               </div>
               <div className="newMoreInfo">
                 <p>Para mais Informações</p>

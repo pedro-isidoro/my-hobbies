@@ -13,6 +13,7 @@
     - <a href="#sinopse">Sinopse</a><br/>
     - <a href="#execution">Execução</a><br/>
     - <a href="#documentacao">Documentação</a>
+    - <a href="#fetch-api">Chamada de API</a>
     </li>
     <li>
         <a href="#visual">Visual do Projeto</a>
@@ -75,6 +76,10 @@
 <p>A página sobre os filmes, pensei em usar uma API, escolhi a do TMDB, criei minha conta e listas com meus filmes e séries assistidos e favoritos. Usando-se do Axios e de hook personalizada, fiz a chamada de API, introduzinho nela as informações para puxar as listas com as informações que queria. Para não ficar tão simples, criel um arquivo com a estrutura genérica para um Modal, e se ultilizando das informações vindas da API, apresento elas no Modal</p>
 <p>E para a página de séries, a príncipio queria fazer a mesma coisa, porém a API que iria usar (Não vou falar para não levar processo) era realmente muito mal desenvolvida. Então Fiz um arquivo JSON inseria as informações que precisava, coloquei as imagens dos livros no public, e se utilizando do "vite-jsconfig-paths" mostro elas com as informações em um modal também.</p>
 <p>Por fim, para o responsivo, se utilizando do Styled-components, usei suas configurações e as coloquei tanto nos próprios arquivos dos components, quanto no global-style, para aqueles mais gerais.</p>
+
+<h4 id="fetch-api">Execução</h4>
+<p>Para a chamada da API TMDB, após assistir e ler sobre requisições, optei por usar o axios. E criando um arquivo e assim criar um Hook personalizado, passando como parâmetro o método, o ID da lista de filmes e o número da página.</p>
+<p>E por fim, dentro do arquivo usando try/catch para tratamento da chamada e por fim retornando os valores desejados de dados, possíveis erros e carregamento dos dados.</p>
 
 ## Visual do Projeto
 <h4 id="visual">Projeto Final</h4>

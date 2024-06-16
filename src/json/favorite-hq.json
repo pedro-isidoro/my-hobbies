@@ -1,6 +1,7 @@
 [
     {
         "name": "Death Note",
+       "original_name": "Death Note",
         "release_date": "2006-10-03",
         "url": "/images/hqs/death-note.webp",
         "author": "Tsugumi Ohba",
@@ -9,6 +10,7 @@
     },
     {
         "name": "Dr. Stone",
+       "original_name": "ドクターストーン",
         "release_date": "2017-05-06",
         "url": "/images/hqs/dr-stone.jpg",
         "author": "Riichiro Inagaki",
@@ -17,6 +19,7 @@
     },
     {
         "name": "Food Wars: Shokugeki no Soma",
+       "original_name": "食戟のソーマ",
         "release_date": "2012-11-26",
         "url": "/images/hqs/food-wars.jpg",
         "author": "Yūto Tsukuda",
@@ -25,6 +28,7 @@
     },
     {
         "name": "Fullmetal Alchemist",
+       "original_name": "鋼の錬金術師",
         "release_date": "2001-07-12",
         "url": "/images/hqs/fullmetal-alchemist.webp",
         "author": "Hiromu Arakawa",
@@ -33,6 +37,7 @@
     },
     {
         "name": "Haikyuu",
+       "original_name": "ハイキュー!!",
         "release_date": "2012-02-20",
         "url": "/images/hqs/haikyuu.jpg",
         "author": "Haruichi Furudate",
@@ -41,6 +46,7 @@
     },
     {
         "name": "Horimiya",
+       "original_name": "ホリミヤ",
         "release_date": "2008-10-22",
         "url": "/images/hqs/horimiya.jpg",
         "author": "HERO",
@@ -49,6 +55,7 @@
     },
     {
         "name": "Hunter X Hunter",
+       "original_name": "Hantā × Hantā",
         "release_date": "1998-03-03",
         "url": "/images/hqs/hunter-x-hunter.webp",
         "author": "Yoshihiro Togashi",
@@ -57,6 +64,7 @@
     },
     {
         "name": "Kuroko no Basket",
+       "original_name": "Kuroko no Basket",
         "release_date": "2008-12-08",
         "url": "/images/hqs/kuroko-no-basket.jpg",
         "author": "Tadatoshi Fujimaki",
@@ -65,6 +73,7 @@
     },
     {
         "name": "Naruto",
+       "original_name": "Naruto",
         "release_date": "1999-09-21",
         "url": "/images/hqs/naruto.jpg",
         "author": "Masashi Kishimoto",
@@ -73,6 +82,7 @@
     },
     {
         "name": "Omniscient Readers Viewpoint",
+       "original_name": "전지적 독자 시점",
         "release_date": "2023-12-12",
         "url": "/images/hqs/omniscient-readers-viewpoint.jpg",
         "author": "Sing Shong",
@@ -81,6 +91,7 @@
     },
     {
         "name": "Solo Leveling",
+       "original_name": "나 혼자만 레벨업",
         "release_date": "2016-07-25",
         "url": "/images/hqs/solo-leveling.jpg",
         "author": "Chu Gong",
@@ -89,6 +100,7 @@
     },
     {
         "name": "The Beginning After the End",
+       "original_name": "끝이 아닌 시작",
         "release_date": "2022-02-15",
         "url": "/images/hqs/the-beginning-after-the-end.jpeg",
         "author": "TurtleMe",
@@ -97,6 +109,7 @@
     },
     {
         "name": "The Promised Neverland",
+       "original_name": "Yakusoku no Neverland",
         "release_date": "2016-08-01",
         "url": "/images/hqs/the-promised-neverland.webp",
         "author": "Kaiu Shirai",

@@ -1,6 +1,7 @@
 [
     {
         "name": "Harry Potter e o Prisioneiro de Azkaban",
+       "original_name": "Harry Potter and the Prisioner of Azkaban",
         "release_date": "1999-07-08",
         "url": "/images/books/harry-potter-3.jpg",
         "author": "J. K. Rowling",
@@ -9,6 +10,7 @@
     },
     {
         "name": "Harry Potter e o Enigma do Príncipe",
+       "original_name": "Harry Potter and the Half-Blood Prince",
         "release_date": "2005-07-16",
         "url": "/images/books/harry-potter-6.jpg",
         "author": "J. K. Rowling",
@@ -17,6 +19,7 @@
     },
     {
         "name": "Harry Potter e as Relíquias da Morte",
+       "original_name": "Harry Potter and the Deathly Hollows",
         "release_date": "2007-07-21",
         "url": "/images/books/harry-potter-7.jpg",
         "author": "J. K. Rowling",
@@ -25,6 +28,7 @@
     },
     {
         "name": "Percy Jackson & Os Olimpianos I - O Ladrão de Raios",
+       "original_name": "Percy Jackson & the Olympians - The Lightning Thief",
         "release_date": "2005-07-28",
         "url": "/images/books/percy-jackson-1.jpg",
         "author": "Rick Riordan",
@@ -33,6 +37,7 @@
     },
     {
         "name": "Percy Jackson & Os Olimpianos III - A Maldição do Titâ",
+       "original_name": "Percy Jackson & the Olympians - The Titan's Curse",
         "release_date": "2007-05-11",
         "url": "/images/books/percy-jackson-3.jpg",
         "author": "Rick Riordan",
@@ -41,6 +46,7 @@
     },
     {
         "name": "Percy Jackson & Os Olimpianos V - O Último Olimpiano",
+       "original_name": "Percy Jackson & the Olympians - The Last Olympians",
         "release_date": "2009-05-05",
         "url": "/images/books/percy-jackson-5.jpg",
         "author": "Rick Riordan",
@@ -49,6 +55,7 @@
     },
     {
         "name": "Os Heróis do Olimpo - O Filho de Netuno",
+       "original_name": "The Heroes of Olympus - The Son of Neptune",
         "release_date": "2011-10-04",
         "url": "/images/books/os-herois-do-olimpo-2.jpg",
         "author": "Rick Riordan",
@@ -57,6 +64,7 @@
     },
     {
         "name": "Os Heróis do Olimpo - A Casa de Hades",
+       "original_name": "The Heroes of Olympus - The House of Hades",
         "release_date": "2013-10-08",
         "url": "/images/books/os-herois-do-olimpo-4.jpg",
         "author": "Rick Riordan",
@@ -65,6 +73,7 @@
     },
     {
         "name": "Os Heróis do Olimpo - O Sangue do Olimpo",
+       "original_name": "The Heroes of Olympus - The Blood of Olympus",
         "release_date": "2014-10-07",
         "url": "/images/books/os-herois-do-olimpo-5.jpg",
         "author": "Rick Riordan",
@@ -73,6 +82,7 @@
     },
     {
         "name": "As Crônicas dos Kane - A Pirâmide Vermelha",
+       "original_name": "The Kane Chronicles - The Red Pyramid",
         "release_date": "2010-05-04",
         "url": "/images/books/as-cronicas-dos-kane-1.jpg",
         "author": "Rick Riordan",
@@ -81,6 +91,7 @@
     },
     {
         "name": "Magnus Chase e os Deuses de Asgard I - A Espada do Verão",
+       "original_name": "Magnus Chase & Gods of Asgard - The Sword of Summer",
         "release_date": "2015-10-06",
         "url": "/images/books/magnus-chase-1.jpg",
         "author": "Rick Riordan",
@@ -89,6 +100,7 @@
     },
     {
         "name": "Magnus Chase e os Deuses de Asgard III - O Navio dos Mortos",
+       "original_name": "Magnus Chase & Gods of Asgard - The Ship of the Dead",
         "release_date": "2017-10-03",
         "url": "/images/books/magnus-chase-3.jpg",
         "author": "Rick Riordan",
@@ -97,6 +109,7 @@
     },
     {
         "name": "As Crônicas de Nárnia",
+       "original_name": "The Chronicles of Narnia",
         "release_date": "2009-01-08",
         "url": "/images/books/as-cronicas-de-narnia.jpg",
         "author": "C. S. Lewis",
@@ -105,6 +118,7 @@
     },
     {
         "name": "Dias Melhores pra Sempre",
+       "original_name": "Dias Melhores pra Sempre",
         "release_date": "2021-09-14",
         "url": "/images/books/dias-melhores-pra-sempre.jpeg",
         "author": "Mauricio Gomyde",

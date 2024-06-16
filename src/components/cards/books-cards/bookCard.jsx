@@ -31,7 +31,7 @@ const BookCard = () => {
             <li className="book-card book-item" key={index}>
               <div className="poster">
                 <img src={book.url} alt={book.name} />
-                <h3>{book.name}</h3>
+                <h3>{book.original_name}</h3>
               </div>
               <div className="newMoreInfo">
                 <p>Para mais Informações</p>

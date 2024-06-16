@@ -137,10 +137,17 @@ export const BooksSection = styled.section`
     background-color: ${(props) => props.paragraph_color};
   }
 
+  @media (max-width: 835px) {
+    & .BooksRead,
+    .BooksToRead {
+      height: 46rem;
+    }
+  }
+
   @media (max-width: 417px) {
     & .BooksRead,
     .BooksToRead {
-      height: 44rem;
+      height: 46rem;
     }
 
     & .book-card,
@@ -171,7 +178,7 @@ export const BooksSection = styled.section`
   @media (max-width: 400px) {
     & .BooksRead,
     .BooksToRead {
-      height: 43rem;
+      height: 44rem;
     }
 
     & .BooksRead img,
@@ -219,14 +226,14 @@ export const BooksSection = styled.section`
     .BooksToRead img,
     .modal-info .book-modal img,
     .modal-info .hq-modal img {
-      width: 14rem;
+      width: 16rem;
     }
   }
 
-  @media (max-width: 371px) {
+  @media (max-width: 376px) {
     & .BooksRead,
     .BooksToRead {
-      height: 42rem;
+      height: 44rem;
     }
 
     & .BooksRead img,
@@ -241,7 +248,7 @@ export const BooksSection = styled.section`
   @media (max-width: 361px) {
     & .BooksRead,
     .BooksToRead {
-      height: 44rem;
+      height: 45rem;
     }
 
     & .BooksRead img,
