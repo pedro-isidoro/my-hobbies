@@ -50,7 +50,7 @@ const HQCard = () => {
           <h3>
             {actualHQ.name} <br /> <span>{actualHQ.release_date}</span>
           </h3>
-          <img src={actualHQ.url} alt={actualHQ.name} />
+          <img src={actualHQ.backdrop_url} alt={actualHQ.name} />
           <div className="description">
             <h4 className="author">
               Autor: <span>{actualHQ.author}</span>

@@ -137,6 +137,13 @@ export const BooksSection = styled.section`
     background-color: ${(props) => props.paragraph_color};
   }
 
+  @media (max-width: 1441px) {
+    & .BooksRead,
+    .BooksToRead {
+      height: 47rem;
+    }
+  }
+  
   @media (max-width: 835px) {
     & .BooksRead,
     .BooksToRead {
@@ -156,9 +163,7 @@ export const BooksSection = styled.section`
     }
 
     & .book-card img,
-    .hq-card img,
-    .modal-info .book-modal img,
-    .modal-info .hq-modal img {
+    .hq-card img {
       width: 19rem;
     }
 
@@ -168,9 +173,7 @@ export const BooksSection = styled.section`
     }
 
     & .book-card img,
-    .hq-card img,
-    .modal-info .book-modal img,
-    .modal-info .hq-modal img {
+    .hq-card img {
       height: 26rem;
     }
   }
@@ -182,16 +185,12 @@ export const BooksSection = styled.section`
     }
 
     & .BooksRead img,
-    .BooksToRead img,
-    .modal-info .book-modal img,
-    .modal-info .hq-modal img {
+    .BooksToRead img{
       width: 16rem;
     }
 
     & .book-card img,
-    .hq-card img,
-    .modal-info .book-modal img,
-    .modal-info .hq-modal img {
+    .hq-card img {
       height: 24rem;
     }
 
@@ -223,9 +222,7 @@ export const BooksSection = styled.section`
 
   @media (max-width: 385px) {
     & .BooksRead img,
-    .BooksToRead img,
-    .modal-info .book-modal img,
-    .modal-info .hq-modal img {
+    .BooksToRead img {
       width: 16rem;
     }
   }
@@ -237,9 +234,7 @@ export const BooksSection = styled.section`
     }
 
     & .BooksRead img,
-    .BooksToRead img,
-    .modal-info .book-modal img,
-    .modal-info .hq-modal img {
+    .BooksToRead img {
       width: 18rem;
     }
   }
@@ -252,16 +247,12 @@ export const BooksSection = styled.section`
     }
 
     & .BooksRead img,
-    .BooksToRead img,
-    .modal-info .book-modal img,
-    .modal-info .hq-modal img {
+    .BooksToRead img {
       width: 15rem;
     }
 
     & .book-card img,
-    .hq-card img,
-    .modal-info .book-modal img,
-    .modal-info .hq-modal img {
+    .hq-card img {
       height: 24rem;
     }
 
@@ -278,9 +269,7 @@ export const BooksSection = styled.section`
     }
 
     & .BooksRead img,
-    .BooksToRead img,
-    .modal-info .book-modal img,
-    .modal-info .hq-modal img {
+    .BooksToRead img {
       width: 10rem;
     }
 

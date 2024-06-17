@@ -1,9 +1,10 @@
 [
     {
         "name": "Harry Potter e o Prisioneiro de Azkaban",
-       "original_name": "Harry Potter and the Prisioner of Azkaban",
+        "original_name": "Harry Potter and the Prisioner of Azkaban",
         "release_date": "1999-07-08",
         "url": "/images/books/harry-potter-3.jpg",
+        "backdrop_url": "/images/backdrop-books/HP-3.jpg",
         "author": "J. K. Rowling",
         "genre": "Romance, Literatura fantástica e Ficção de aventura",
         "sinopse": "O livro conta sobre o terceiro ano de Harry Potter na Escola de Magia e Bruxaria de Hogwarts. Sem a aparição de Voldemort, a trama apresenta um novo perigo para o personagem principal: Sirius Black, que teria assassinado treze pessoas com um único feitiço, fugiu da prisão de Azkaban e estaria agora o perseguindo para matá-lo. O garoto, junto com seus dois amigos, Rony e Hermione, começam a investigar o suposto assassino e acabam descobrindo muitos segredos que envolvem sua já falecida família."
@@ -13,6 +14,7 @@
        "original_name": "Harry Potter and the Half-Blood Prince",
         "release_date": "2005-07-16",
         "url": "/images/books/harry-potter-6.jpg",
+        "backdrop_url": "/images/backdrop-books/HP-6.jpg",
         "author": "J. K. Rowling",
         "genre": "Romance, Literatura fantástica e Ficção de aventura",
         "sinopse": "Retomando os passos de Harry no mundo bruxo, o jovem, agora em seu sexto ano na Escola de Magia e Bruxaria de Hogwarts, prepara-se para a batalha final contra Voldemort, cujo poder aumenta ininterruptamente. Em sessões privadas com o diretor Alvo Dumbledore, Harry vasculha o passado de Voldemort para obter respostas em como destruí-lo."
@@ -22,6 +24,7 @@
        "original_name": "Harry Potter and the Deathly Hollows",
         "release_date": "2007-07-21",
         "url": "/images/books/harry-potter-7.jpg",
+        "backdrop_url": "/images/backdrop-books/HP-7.jpeg",
         "author": "J. K. Rowling",
         "genre": "Romance, Literatura fantástica e Ficção de aventura",
         "sinopse": "Após se encarregarem da tarefa do falecido diretor da Escola de Magia e Bruxaria de Hogwarts, Alvo Dumbledore em encontrar e destruir todas as Horcruxes criadas pelo maior bruxo das trevas Voldemort, o livro narra a jornada do personagem principal, o jovem Harry, e seus melhores amigos Rony e Hermione, que abandonaram seu último ano letivo na escola de feitiçaria para cumprirem tal dever. Ao passo que o confronto final entre Harry e Voldemort se aproxima, a batalha entre os Comensais da Morte (seguidores de Voldemort) e o resto do mundo bruxo acontece."
@@ -31,6 +34,7 @@
        "original_name": "Percy Jackson & the Olympians - The Lightning Thief",
         "release_date": "2005-07-28",
         "url": "/images/books/percy-jackson-1.jpg",
+        "backdrop_url": "/images/backdrop-books/percy-jackson-3.jpg",
         "author": "Rick Riordan",
         "genre": "Romance, Mitologia grega, Fantasia e Literatura fantástica",
         "sinopse": "Os deuses do Olimpo continuam vivos, em pleno século XXI! Eles ainda se apaixonam por mortais e têm filhos que podem se tornar grandes heróis, mas que acabam, na maioria das vezes, encontrando destinos terríveis nas garras de monstros sem coração. Apenas alguns descobrem sua identidade e conseguem chegar ao Acampamento Meio-Sangue, um acampamento de verão em Long Island dedicado ao treinamento de jovens semideuses."
@@ -40,6 +44,7 @@
        "original_name": "Percy Jackson & the Olympians - The Titan's Curse",
         "release_date": "2007-05-11",
         "url": "/images/books/percy-jackson-3.jpg",
+        "backdrop_url": "/images/backdrop-books/percy-jackson.png",
         "author": "Rick Riordan",
         "genre": "Romance, Mitologia grega, Fantasia e Literatura fantástica",
         "sinopse": "Um chamado do amigo Grover deixa Percy a postos para mais uma missão: dois novos meios-sangues foram encontrados, cuja ascendência ainda é desconhecida. Como sempre, Percy conta com a ajuda da melhor amiga, Annabeth Chase, filha de Atena, e da mais nova parceira, Thalia Grace, filha de Zeus."
@@ -49,6 +54,7 @@
        "original_name": "Percy Jackson & the Olympians - The Last Olympians",
         "release_date": "2009-05-05",
         "url": "/images/books/percy-jackson-5.jpg",
+        "backdrop_url": "/images/backdrop-books/percy-jackson.png",
         "author": "Rick Riordan",
         "genre": "Romance, Mitologia grega, Fantasia e Literatura fantástica",
         "sinopse": "Os meios-sangues e semideuses passaram todo o ano preparando-se para a batalha contra os Titãs, e sabem que as chances de vitória são pequenas. O exército de Cronos está mais poderoso que nunca, e cada novo deus ou meio-sangue que se une à causa confere mais força ao vingativo titã. Enquanto os Olimpianos se ocupam de conter a fúria do monstro Tifão, Cronos avança em direção à cidade de Nova York, onde o Monte Olimpo está precariamente vigiado."
@@ -58,6 +64,7 @@
        "original_name": "The Heroes of Olympus - The Son of Neptune",
         "release_date": "2011-10-04",
         "url": "/images/books/os-herois-do-olimpo-2.jpg",
+        "backdrop_url": "/images/backdrop-books/heroes-of-olympus.jpg",
         "author": "Rick Riordan",
         "genre": "Fantasia e Mitologia greco-romana",
         "sinopse": "A história segue as aventuras de Percy Jackson, um filho semideus de Poseidon, que sem memória, encontra um acampamento de semideuses romanos e vai para o Alasca com seus novos amigos Hazel Levesque e Frank Zhang para libertar o deus grego da morte, Tânatos, e ajudar a salvar o mundo de Gaia, a deusa primordial da terra."
@@ -67,6 +74,7 @@
        "original_name": "The Heroes of Olympus - The House of Hades",
         "release_date": "2013-10-08",
         "url": "/images/books/os-herois-do-olimpo-4.jpg",
+        "backdrop_url": "/images/backdrop-books/heroes-of-olympus.jpg",
         "author": "Rick Riordan",
         "genre": "Fantasia e Mitologia greco-romana",
         "sinopse": "Depois de Annabeth Chase e Percy Jackson caírem no Tártaro no final de A Marca de Atena, os outros cinco semideuses da 'nova grande profecia' (Frank Zhang, Hazel Levesque, Jason Grace, Leo Valdez e Piper McLean), acompanhados por Nico di Angelo e o treinador Hedge, seguem rumo a Grécia para encontrar e fechar as Portas da Morte, a fim de que os monstros do exército de Gaia, a deusa primordial da terra, não renasçam constantemente."
@@ -76,6 +84,7 @@
        "original_name": "The Heroes of Olympus - The Blood of Olympus",
         "release_date": "2014-10-07",
         "url": "/images/books/os-herois-do-olimpo-5.jpg",
+        "backdrop_url": "/images/backdrop-books/heroes-of-olympus.jpg",
         "author": "Rick Riordan",
         "genre": "Fantasia e Mitologia greco-romana",
         "sinopse": "Os sete semideuses da 'nova grande profecia' (Annabeth Chase, Frank Zhang, Hazel Levesque, Jason Grace, Leo Valdez, Percy Jackson e Piper McLean) continuam sua viagem pela Grécia para impedir o renascimento de Gaia, a deusa primordial da terra."
@@ -85,6 +94,7 @@
        "original_name": "The Kane Chronicles - The Red Pyramid",
         "release_date": "2010-05-04",
         "url": "/images/books/as-cronicas-dos-kane-1.jpg",
+        "backdrop_url": "/images/backdrop-books/the-kane-chronicles.jpg",
         "author": "Rick Riordan",
         "genre": "Romance, Literatura fantástica e Ficção de aventura",
         "sinopse": "Desde a morte da mãe seis anos antes que Carter Kane viaja pelo mundo com o pai, o egiptólogo Dr. Julius Kane. Ele não frequenta a escola e seus pertences cabem em uma única mala. Enquanto isso, Sadie, sua irmã mais nova, é criada pelos avós em Londres. Ela tem tudo o que Carter queria: casa, amigos e uma vida “normal”."
@@ -94,6 +104,7 @@
        "original_name": "Magnus Chase & Gods of Asgard - The Sword of Summer",
         "release_date": "2015-10-06",
         "url": "/images/books/magnus-chase-1.jpg",
+        "backdrop_url": "/images/backdrop-books/magnus-chase.webp",
         "author": "Rick Riordan",
         "genre": "Romance, Mitologia nórdica e Ficção de aventura",
         "sinopse": "Magnus Chase sempre foi uma criança problemática. Desde a misteriosa morte de sua mãe, ele viveu sozinho nas ruas de Boston, sobrevivendo graças à sua sagacidade e mantendo-se um passo à frente da polícia. Um dia, ele é encontrado por um tio que nunca conheceu – um homem que sua mãe considerava perigoso. Seu tio lhe conta um segredo impossível, Magnus é filho de um Deus Nórdico, e que ele não é o único. Os mitos Viking são reais. Os deuses de Asgard estão se preparando para a guerra."
@@ -103,6 +114,7 @@
        "original_name": "Magnus Chase & Gods of Asgard - The Ship of the Dead",
         "release_date": "2017-10-03",
         "url": "/images/books/magnus-chase-3.jpg",
+        "backdrop_url": "/images/backdrop-books/magnus-chase.webp",
         "author": "Rick Riordan",
         "genre": "Romance, Mitologia nórdica e Ficção de aventura",
         "sinopse": "Desta vez, Magnus, Sam, Alex, Blitzen, Hearthstone e seus amigos do Hotel Valhala vão precisar cruzar os oceanos de Midgard, Jötunheim e Niflheim em uma corrida desesperada para alcançar Naglfar antes de o navio zarpar no solstício de verão, enfrentando no caminho deuses do mar raivosos e hipsters, gigantes irritados e dragões malignos cuspidores de fogo. Para derrotar Loki, o grupo precisa recuperar o hidromel de Kvásir, uma bebida mágica que dá a quem bebe o dom da poesia, e vencer o deus em uma competição de insultos."
@@ -112,6 +124,7 @@
        "original_name": "The Chronicles of Narnia",
         "release_date": "2009-01-08",
         "url": "/images/books/as-cronicas-de-narnia.jpg",
+        "backdrop_url": "/images/backdrop-books/narnia.jpg",
         "author": "C. S. Lewis",
         "genre": "Fantasia, Horror e Ficção Científica",
         "sinopse": "Viagens ao fim do mundo, criaturas fantásticas e batalhas épicas entre o bem e o mal - o que mais um leitor poderia querer de um livro? O livro que tem tudo isso é 'O leão, a feiticeira e o guarda-roupa', escrito em 1949 por Clive Staples Lewis. MasLewis não parou por aí. Seis outros livros vieram depois e, juntos, ficaram conhecidos como 'As crônicas de Nárnia'. Nos últimos cinqüenta anos, 'As crônicas de Nárnia' transcenderam o gênero da fantasia para se tornar parte do cânone da literaturaclássica."
@@ -121,6 +134,7 @@
        "original_name": "Dias Melhores pra Sempre",
         "release_date": "2021-09-14",
         "url": "/images/books/dias-melhores-pra-sempre.jpeg",
+        "backdrop_url": "/images/backdrop-books/dias-melhores.jpg",
         "author": "Mauricio Gomyde",
         "genre": "Romance e Ficção",
         "sinopse": "Sua vida era feita por tudo que ele sempre quis: um violão, um telescópio, muitos discos bons, amigos, um emprego de sonhos e uma casa que flutuava. Mas no dia em que recebeu a proposta de trabalho com a qual sempre sonhou, ele decidiu dizer “não”, porque nada mais fazia sentido."

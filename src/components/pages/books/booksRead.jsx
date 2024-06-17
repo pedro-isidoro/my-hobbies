@@ -3,6 +3,8 @@ import { ThemeContext } from "../../../contexts/Theme-context";
 import { BooksSection } from "./booksRead.style";
 import { Link } from "react-router-dom";
 import { Button } from "../../generic-button/GenericButton";
+import allBooks from "/src/json/favorite-books.json";
+import allHqs from "/src/json/favorite-hq.json";
 
 import BookCard from "../../cards/books-cards/bookCard";
 import HQCard from "../../cards/books-cards/hqCard";
@@ -20,12 +22,12 @@ export function BooksRead() {
       span={theme.span_color}
     >
       <div className="BooksRead">
-        <h2>Livros</h2>
+        <h2>Livros ({allBooks.length})</h2>
         <BookCard />
       </div>
       <div className="BooksToRead">
-        <h2>HQ's</h2>
-        <HQCard />
+        <h2>HQ's ({allHqs.length})</h2>
+        <HQCard hqsData={allHqs} />
       </div>
       <Link to="/">
         <Button>Home Page</Button>

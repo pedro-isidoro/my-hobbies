@@ -53,7 +53,7 @@ const BookCard = () => {
             {actualBook.name} <br />
             <span>{actualBook.release_date}</span>
           </h3>
-          <img src={actualBook.url} alt={actualBook.name} />
+          <img src={actualBook.backdrop_url} alt={actualBook.name} />
           <div className="description">
             <h4 className="author">
               Autor: <span>{actualBook.author}</span>

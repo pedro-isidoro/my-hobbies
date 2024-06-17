@@ -129,22 +129,21 @@ export const GlobalStyle = createGlobalStyle`
   .serie-card img,
   .animation-card img,
   .book-card img,
-  .hq-card  img, 
-  .modal-info .book-modal img,
-  .modal-info .hq-modal img{
+  .hq-card  img{
     width: 18.5rem;
     margin-bottom: 0.8rem;
   }
 
   & .book-card img,
-  .hq-card  img, .modal-info .book-modal img,
-  .modal-info .hq-modal img {
+  .hq-card  img {
     height: 28rem;
   }
   
   & .movie-card .movie-modal img,
   .serie-card .serie-modal img,
-  .animation-card .animation-modal img {
+  .animation-card .animation-modal img, 
+  .modal-info .book-modal img,
+  .modal-info .hq-modal img {
     width: 50%;
     height: 100%;
     margin: 0.8rem 0 1.6rem 0;
@@ -341,7 +340,9 @@ export const GlobalStyle = createGlobalStyle`
 
   & .movie-card .movie-modal img,
   .serie-card .serie-modal img,
-  .animation-card .animation-modal img {
+  .animation-card .animation-modal img, 
+  .modal-info .book-modal img,
+  .modal-info .hq-modal img {
     width: 70%;
     margin: 0.8rem 0 1.6rem 0;
   }
@@ -415,6 +416,14 @@ export const GlobalStyle = createGlobalStyle`
   .viewedAnimations .animation-slider .card .loading,
   .book-slider .card .loading, .hq-slider .card .loading {
     padding-left: 3.5rem;
+  }
+  
+  & .movie-card .movie-modal img,
+  .serie-card .serie-modal img,
+  .animation-card .animation-modal img,
+  .modal-info .book-modal img,
+  .modal-info .hq-modal img {
+    width: 85%;
   }
   }
   

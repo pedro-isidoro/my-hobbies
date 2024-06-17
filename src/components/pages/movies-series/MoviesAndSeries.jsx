@@ -20,19 +20,22 @@ export function MoviesAndSeries() {
   let movies1 = useMoviesAndSeries(8302788, 1).dataList;
   let movies2 = useMoviesAndSeries(8302788, 2).dataList;
   let movies3 = useMoviesAndSeries(8302788, 3).dataList;
-  const allMovies = movies1.concat(movies2, movies3);
-  console.log("Filmes: ", movies3)
+  let movies4 = useMoviesAndSeries(8302788, 4).dataList;
+  const allMovies = movies1.concat(movies2, movies3, movies4);
+  // console.log("Filmes: ", movies3)
   
   let series1 = useMoviesAndSeries(8302789, 1).dataList;
   let series2 = useMoviesAndSeries(8302789, 2).dataList;
   let series3 = useMoviesAndSeries(8302789, 3).dataList;
-  const allSeries = series1.concat(series2, series3);
-  console.log("Séries: ", series1)
+  let series4 = useMoviesAndSeries(8302789, 4).dataList;
+  const allSeries = series1.concat(series2, series3, series4);
+  // console.log("Séries: ", series1)
   
   let animation1 = useMoviesAndSeries(8302786, 1).dataList;
   let animation2 = useMoviesAndSeries(8302786, 2).dataList;
   let animation3 = useMoviesAndSeries(8302786, 3).dataList;
-  const allAnimations = animation1.concat(animation2, animation3);
+  let animation4 = useMoviesAndSeries(8302786, 4).dataList;
+  const allAnimations = animation1.concat(animation2, animation3, animation4);
 
   return (
     <CinephiliaSection
@@ -43,7 +46,7 @@ export function MoviesAndSeries() {
       span={theme.span_color}
     >
       <div className="viewedMovies">
-        <h2>Filmes</h2>
+        <h2>Top Filmes ({allMovies.length})</h2>
         <div className="movie-slider">
           <Button className="prev" onClick={nextMovieCard}>
             <i
@@ -69,7 +72,7 @@ export function MoviesAndSeries() {
         </div>
       </div>
       <div className="viewedAnimations">
-        <h2>Animações</h2>
+        <h2>Top Animações ({allAnimations.length})</h2>
         <div className="animation-slider">
           <Button className="prev" onClick={nextAnimationCard}>
             <i
@@ -95,7 +98,7 @@ export function MoviesAndSeries() {
         </div>
       </div>
       <div className="viewedSeries">
-        <h2>Séries</h2>
+        <h2>Top Séries ({allSeries.length})</h2>
         <div className="serie-slider">
           <Button className="prev" onClick={nextSerieCard}>
             <i
