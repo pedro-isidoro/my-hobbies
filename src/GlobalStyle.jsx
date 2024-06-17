@@ -141,6 +141,14 @@ export const GlobalStyle = createGlobalStyle`
   .modal-info .hq-modal img {
     height: 28rem;
   }
+  
+  & .movie-card .movie-modal img,
+  .serie-card .serie-modal img,
+  .animation-card .animation-modal img {
+    width: 50%;
+    height: 100%;
+    margin: 0.8rem 0 1.6rem 0;
+  }
 
   & .movie-card h3,
   .serie-card h3,
@@ -329,6 +337,13 @@ export const GlobalStyle = createGlobalStyle`
   .viewedAnimations .animation-slider .card .loading,
   .book-slider .card .loading, .hq-slider .card .loading {
     padding-left: 6rem;
+  }
+
+  & .movie-card .movie-modal img,
+  .serie-card .serie-modal img,
+  .animation-card .animation-modal img {
+    width: 70%;
+    margin: 0.8rem 0 1.6rem 0;
   }
   }
 

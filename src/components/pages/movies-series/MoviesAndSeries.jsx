@@ -21,13 +21,13 @@ export function MoviesAndSeries() {
   let movies2 = useMoviesAndSeries(8302788, 2).dataList;
   let movies3 = useMoviesAndSeries(8302788, 3).dataList;
   const allMovies = movies1.concat(movies2, movies3);
-  // console.log(movies1)
+  console.log("Filmes: ", movies3)
   
   let series1 = useMoviesAndSeries(8302789, 1).dataList;
   let series2 = useMoviesAndSeries(8302789, 2).dataList;
   let series3 = useMoviesAndSeries(8302789, 3).dataList;
   const allSeries = series1.concat(series2, series3);
-  // console.log(series1)
+  console.log("Séries: ", series1)
   
   let animation1 = useMoviesAndSeries(8302786, 1).dataList;
   let animation2 = useMoviesAndSeries(8302786, 2).dataList;

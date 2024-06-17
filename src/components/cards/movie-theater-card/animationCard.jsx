@@ -24,7 +24,15 @@ const AnimationCard = ({ animation }) => {
           <h3>
             {animation.title} <br /> <span>{animation.release_date}</span>
           </h3>
-          <img src={imageUrl + animation.poster_path} alt={animation.title} />
+          {animation.backdrop_path === null ? (
+            <img src={imageUrl + animation.poster_path} alt={animation.title} />
+          ) : (
+            <img
+              src={imageUrl + animation.backdrop_path}
+              alt={animation.title}
+            />
+          )}
+          {/* <img src={imageUrl + animation.backdrop_path} alt={animation.title} /> */}
           <div className="description">
             <h4>
               Avaliação Média -<i className="fa-solid fa-star"></i>

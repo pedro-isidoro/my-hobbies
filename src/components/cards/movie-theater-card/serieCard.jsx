@@ -24,7 +24,12 @@ const SerieCard = ({serie}) => {
           <h3>
             {serie.name} <br /> <span>{serie.first_air_date}</span>
           </h3>
-          <img src={imageUrl + serie.poster_path} alt={serie.name} />
+          {serie.backdrop_path === null ? (
+            <img src={imageUrl + serie.poster_path} alt={serie.name} />
+          ) : (
+            <img src={imageUrl + serie.backdrop_path} alt={serie.name} />
+          )}
+          {/* <img src={imageUrl + serie.backdrop_path} alt={serie.name} /> */}
           <div className="description">
             <h4>
               Avaliação Média -<i className="fa-solid fa-star"></i>

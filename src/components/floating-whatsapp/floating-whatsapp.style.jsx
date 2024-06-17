@@ -22,7 +22,7 @@ export const Whatsapp = styled.section`
     color: rgb(255, 255, 255);
     background-color: rgb(37, 211, 102);
     box-shadow: 1px 1px 2px #888;
-    z-index: 9;
+    z-index: 2;
     animation: whatsFloat 3.5s ease-in-out infinite;
   }
 

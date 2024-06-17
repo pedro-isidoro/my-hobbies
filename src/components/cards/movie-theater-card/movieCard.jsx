@@ -24,7 +24,12 @@ const MovieCard = ({movie}) => {
           <h3>
             {movie.title} <br /> <span>{movie.release_date}</span>
           </h3>
-          <img src={imageUrl + movie.poster_path} alt={movie.title} />
+          {movie.backdrop_path === null ? (
+            <img src={imageUrl + movie.poster_path} alt={movie.title} />
+          ) : (
+            <img src={imageUrl + movie.backdrop_path} alt={movie.title} />
+          )}
+          {/* <img src={imageUrl + movie.backdrop_path} alt={movie.title} /> */}
           <div className="description">
             <h4>
               Avaliação Média -<i className="fa-solid fa-star"></i>
