@@ -83,6 +83,4 @@
 
 ## Visual do Projeto
 <h4 id="visual">Projeto Final</h4>
-<img src="./src/images/project/hobbie-homePage.gif" alt="Project Image" />
-<h4>Responsívo</h4>
-<img src="./src/images/project/hobbie-modalCards.gif" alt="Project Responsive Image" />
+<video controls src="./src/images/project/hobbie-modalCards2.mp4" alt="Project Responsive Image" poster="./src/images/project/hobbie-project.png"/>
