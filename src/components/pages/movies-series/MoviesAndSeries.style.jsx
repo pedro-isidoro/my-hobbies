@@ -126,6 +126,15 @@ export const CinephiliaSection = styled.section`
     color: ${(props) => props.paragraph_color};
   }
 
+  @media (max-width: 426px) {
+    & .movie-card .movie-modal img,
+    .serie-card .serie-modal img,
+    .animation-card .animation-modal img {
+      width: 90%;
+      margin: 0.8rem 0 1.6rem 0;
+    }
+  }
+
   @media (max-width: 412px) {
     & .viewedMovies,
     .viewedSeries,

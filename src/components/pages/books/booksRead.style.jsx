@@ -143,11 +143,19 @@ export const BooksSection = styled.section`
       height: 47rem;
     }
   }
-  
+
   @media (max-width: 835px) {
     & .BooksRead,
     .BooksToRead {
       height: 46rem;
+    }
+  }
+
+  @media (max-width: 426px) {
+    & .modal-info .book-modal img,
+    .modal-info .hq-modal img {
+      width: 90%;
+      margin: 0.8rem 0 1.6rem 0;
     }
   }
 
@@ -185,7 +193,7 @@ export const BooksSection = styled.section`
     }
 
     & .BooksRead img,
-    .BooksToRead img{
+    .BooksToRead img {
       width: 16rem;
     }
 

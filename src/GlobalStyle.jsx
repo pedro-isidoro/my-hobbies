@@ -338,14 +338,14 @@ export const GlobalStyle = createGlobalStyle`
     padding-left: 6rem;
   }
 
-  & .movie-card .movie-modal img,
+  /* & .movie-card .movie-modal img,
   .serie-card .serie-modal img,
   .animation-card .animation-modal img, 
   .modal-info .book-modal img,
   .modal-info .hq-modal img {
-    width: 160%;
+    width: 90%;
     margin: 0.8rem 0 1.6rem 0;
-  }
+  } */
   }
 
   @media (max-width: 417px) {
