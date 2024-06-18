@@ -1,5 +1,15 @@
 [
     {
+        "name": "Harry Potter e a Pedra Filosofal",
+        "original_name": "Harry Potter and the Philosofal Stone",
+        "release_date": "1997-06-26",
+        "url": "/images/books/harry-potter-1.jpg",
+        "backdrop_url": "/images/backdrop-books/HP-1.png",
+        "author": "J. K. Rowling",
+        "genre": "Romance, Literatura fantástica e Ficção de aventura",
+        "sinopse": "Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo. No dia de seu aniversário de 11 anos, entretanto, ele parece deslizar por um buraco sem fundo, como o de Alice no país das maravilhas, que o conduz a um mundo mágico."
+    },
+    {
         "name": "Harry Potter e o Prisioneiro de Azkaban",
         "original_name": "Harry Potter and the Prisioner of Azkaban",
         "release_date": "1999-07-08",
@@ -34,7 +44,7 @@
        "original_name": "Percy Jackson & the Olympians - The Lightning Thief",
         "release_date": "2005-07-28",
         "url": "/images/books/percy-jackson-1.jpg",
-        "backdrop_url": "/images/backdrop-books/percy-jackson-3.jpg",
+        "backdrop_url": "/images/backdrop-books/percy-jackson.png",
         "author": "Rick Riordan",
         "genre": "Romance, Mitologia grega, Fantasia e Literatura fantástica",
         "sinopse": "Os deuses do Olimpo continuam vivos, em pleno século XXI! Eles ainda se apaixonam por mortais e têm filhos que podem se tornar grandes heróis, mas que acabam, na maioria das vezes, encontrando destinos terríveis nas garras de monstros sem coração. Apenas alguns descobrem sua identidade e conseguem chegar ao Acampamento Meio-Sangue, um acampamento de verão em Long Island dedicado ao treinamento de jovens semideuses."
@@ -98,6 +108,16 @@
         "author": "Rick Riordan",
         "genre": "Romance, Literatura fantástica e Ficção de aventura",
         "sinopse": "Desde a morte da mãe seis anos antes que Carter Kane viaja pelo mundo com o pai, o egiptólogo Dr. Julius Kane. Ele não frequenta a escola e seus pertences cabem em uma única mala. Enquanto isso, Sadie, sua irmã mais nova, é criada pelos avós em Londres. Ela tem tudo o que Carter queria: casa, amigos e uma vida “normal”."
+    },
+    {
+        "name": "As Crônicas dos Kane - A Sombra da Serpente",
+       "original_name": "The Kane Chronicles - The Serpent's Shadow",
+        "release_date": "2012-05-01",
+        "url": "/images/books/as-cronicas-dos-kane-3.jpg",
+        "backdrop_url": "/images/backdrop-books/the-kane-chronicles.jpg",
+        "author": "Rick Riordan",
+        "genre": "Romance, Literatura fantástica e Ficção de aventura",
+        "sinopse": "Os irmãos sabem que sua herança ancestral lhes reserva um importante papel: seus poderes são fundamentais para a restauração do Maat, a ordem do universo. Mas, uma vez instalado, o Caos é imprevisível, incalculável e incontrolável, e agora que Apófis está livre os Kane têm somente três dias para evitar que a serpente destrua o planeta. Como se isso não bastasse, a sorte deles parece só piorar."
     },
     {
         "name": "Magnus Chase e os Deuses de Asgard I - A Espada do Verão",

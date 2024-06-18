@@ -144,7 +144,7 @@ export const GlobalStyle = createGlobalStyle`
   .animation-card .animation-modal img, 
   .modal-info .book-modal img,
   .modal-info .hq-modal img {
-    width: 50%;
+    width: 55%;
     height: 100%;
     margin: 0.8rem 0 1.6rem 0;
   }
@@ -343,7 +343,7 @@ export const GlobalStyle = createGlobalStyle`
   .animation-card .animation-modal img, 
   .modal-info .book-modal img,
   .modal-info .hq-modal img {
-    width: 70%;
+    width: 75%;
     margin: 0.8rem 0 1.6rem 0;
   }
   }
@@ -423,7 +423,7 @@ export const GlobalStyle = createGlobalStyle`
   .animation-card .animation-modal img,
   .modal-info .book-modal img,
   .modal-info .hq-modal img {
-    width: 85%;
+    width: 95%;
   }
   }
   
