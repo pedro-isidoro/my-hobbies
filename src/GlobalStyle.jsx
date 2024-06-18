@@ -343,7 +343,7 @@ export const GlobalStyle = createGlobalStyle`
   .animation-card .animation-modal img, 
   .modal-info .book-modal img,
   .modal-info .hq-modal img {
-    width: 130%;
+    width: 160%;
     margin: 0.8rem 0 1.6rem 0;
   }
   }
