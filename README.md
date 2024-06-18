@@ -84,7 +84,5 @@
 ## Visual do Projeto
 <h4 id="visual">Projeto Final</h4>
 <img src="./src/images/project/hobbie-homePage.gif" alt="Project Responsive Image"/>
-<h4 id="visual">Projeto "Todo"</h4>
-<video controls width="90%" alt="Project Responsive Image" poster="./src/images/project/hobbie-project.png">
-<source src="./src/images/project/hobbie-modalCards2.mp4" type="video/mp4" />
-</video>
+<h4 id="visual">Post do Projeto"</h4>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7208826920656871424/" target="_blank">LinkedIn</a>
