@@ -343,7 +343,7 @@ export const GlobalStyle = createGlobalStyle`
   .animation-card .animation-modal img, 
   .modal-info .book-modal img,
   .modal-info .hq-modal img {
-    width: 85%;
+    width: 100%;
     margin: 0.8rem 0 1.6rem 0;
   }
   }
@@ -418,13 +418,13 @@ export const GlobalStyle = createGlobalStyle`
     padding-left: 3.5rem;
   }
   
-  & .movie-card .movie-modal img,
+  /* & .movie-card .movie-modal img,
   .serie-card .serie-modal img,
   .animation-card .animation-modal img,
   .modal-info .book-modal img,
   .modal-info .hq-modal img {
     width: 100%;
-  }
+  } */
   }
   
   @media (max-width: 361px){
