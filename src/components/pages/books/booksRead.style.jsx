@@ -274,9 +274,7 @@ export const BooksSection = styled.section`
     }
 
     & .book-card img,
-    .hq-card img,
-    .modal-info .book-modal img,
-    .modal-info .hq-modal img {
+    .hq-card img {
       height: 16rem;
     }
   }
