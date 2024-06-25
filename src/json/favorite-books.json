@@ -10,6 +10,16 @@
         "sinopse": "Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo. No dia de seu aniversário de 11 anos, entretanto, ele parece deslizar por um buraco sem fundo, como o de Alice no país das maravilhas, que o conduz a um mundo mágico."
     },
     {
+        "name": "Harry Potter e a Câmara Secreta",
+        "original_name": "Harry Potter and the Chamber of Secrets",
+        "release_date": "1998-07-02",
+        "url": "/images/books/harry-potter-2.jpg",
+        "backdrop_url": "/images/backdrop-books/HP-2.jpg",
+        "author": "J. K. Rowling",
+        "genre": "Romance, Literatura fantástica e Ficção de aventura",
+        "sinopse": "Depois de férias aborrecidas na casa dos tios trouxas, está na hora de Harry Potter voltar a estudar. Coisas acontecem, no entanto, para dificultar o regresso de Harry. Persistente e astuto, o herói não se deixa intimidar pelos obstáculos e, com a ajuda dos fiéis amigos Weasley, começa o ano letivo na Escola de Magia e Bruxaria de Hogwarts. As novidades não são poucas."
+    },
+    {
         "name": "Harry Potter e o Prisioneiro de Azkaban",
         "original_name": "Harry Potter and the Prisioner of Azkaban",
         "release_date": "1999-07-08",
@@ -18,6 +28,26 @@
         "author": "J. K. Rowling",
         "genre": "Romance, Literatura fantástica e Ficção de aventura",
         "sinopse": "O livro conta sobre o terceiro ano de Harry Potter na Escola de Magia e Bruxaria de Hogwarts. Sem a aparição de Voldemort, a trama apresenta um novo perigo para o personagem principal: Sirius Black, que teria assassinado treze pessoas com um único feitiço, fugiu da prisão de Azkaban e estaria agora o perseguindo para matá-lo. O garoto, junto com seus dois amigos, Rony e Hermione, começam a investigar o suposto assassino e acabam descobrindo muitos segredos que envolvem sua já falecida família."
+    },
+    {
+        "name": "Harry Potter e o Cálice de Fogo",
+        "original_name": "Harry Potter and the Goblet of Fire",
+        "release_date": "2000-07-08",
+        "url": "/images/books/harry-potter-4.jpg",
+        "backdrop_url": "/images/backdrop-books/HP-4.png",
+        "author": "J. K. Rowling",
+        "genre": "Romance, Literatura fantástica e Ficção de aventura",
+        "sinopse": "Nesta aventura, o feiticeiro cresceu e está com 14 anos. O início do ano letivo de Harry Potter reserva muitas emoções, mágicas, e acontecimentos inesperados, além de um novo torneio em que os alunos de Hogwarts terão de demonstrar todas as habilidade mágicas e nãomágicas que vêm adquirindo ao longo de suas vidas. Harry é escolhido pelo Cálice de Fogo para competir como um dos campeões de Hogwarts, tendo ao lado seus fiéis amigos. Muitos desafios, feitiços, poções e confusões estão reservados para Harry."
+    },
+    {
+        "name": "Harry Potter e a Ordem da Fênix",
+        "original_name": "Harry Potter and the Order of the Phoenix",
+        "release_date": "2003-06-21",
+        "url": "/images/books/harry-potter-5.jpg",
+        "backdrop_url": "/images/backdrop-books/HP-5.jpg",
+        "author": "J. K. Rowling",
+        "genre": "Romance, Literatura fantástica e Ficção de aventura",
+        "sinopse": "Nesta aventura, o feiticeiro cresceu e está com 14 anos. O início do ano letivo de Harry Potter reserva muitas emoções, mágicas, e acontecimentos inesperados, além de um novo torneio em que os alunos de Hogwarts terão de demonstrar todas as habilidade mágicas e nãomágicas que vêm adquirindo ao longo de suas vidas. Harry é escolhido pelo Cálice de Fogo para competir como um dos campeões de Hogwarts, tendo ao lado seus fiéis amigos. Muitos desafios, feitiços, poções e confusões estão reservados para Harry."
     },
     {
         "name": "Harry Potter e o Enigma do Príncipe",
