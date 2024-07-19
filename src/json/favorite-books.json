@@ -181,12 +181,62 @@
     },
     {
         "name": "Dias Melhores pra Sempre",
-       "original_name": "Dias Melhores pra Sempre",
+        "original_name": "Dias Melhores pra Sempre",
         "release_date": "2021-09-14",
         "url": "/images/books/dias-melhores-pra-sempre.jpeg",
         "backdrop_url": "/images/backdrop-books/dias-melhores.jpg",
         "author": "Mauricio Gomyde",
         "genre": "Romance e Ficção",
         "sinopse": "Sua vida era feita por tudo que ele sempre quis: um violão, um telescópio, muitos discos bons, amigos, um emprego de sonhos e uma casa que flutuava. Mas no dia em que recebeu a proposta de trabalho com a qual sempre sonhou, ele decidiu dizer “não”, porque nada mais fazia sentido."
+    },
+    {
+        "name": "Rangers Ordem dos Arqueiros - Ruínas de Gorlan",
+        "original_name": "The Ranger's Apprentice: The Ruins of Gorlan",
+        "release_date": "2004-11-01",
+        "url": "/images/books/rangers-1.jpg",
+        "backdrop_url": "/images/backdrop-books/rangers.jpg",
+        "author": "John Flanagan",
+        "genre": "Fantasia e Ficção",
+        "sinopse": "Rangers narra a empolgante jornada de Will, um aprendiz destemido, que descobre o poder extraordinário das habilidades de arqueiro. Cada livro da série é uma exploração fascinante de coragem, amizade e determinação, em um mundo repleto de desafios e magia. "
+    },
+    {
+        "name": "Rangers Ordem dos Arqueiros - Ponte em Chamas",
+        "original_name": "The Ranger's Apprentice: The Burning Bridge",
+        "release_date": "2005-05-05",
+        "url": "/images/books/rangers-2.jpg",
+        "backdrop_url": "/images/backdrop-books/rangers.jpg",
+        "author": "John Flanagan",
+        "genre": "Fantasia e Ficção",
+        "sinopse": "Nos últimos quinze anos, o temível Morgarath conseguiu reunir um enorme exército de criaturas implacáveis, os Wargals. Eles não temem nenhum inimigo e são controlados mentalmente pelo próprio Morgarath, o Senhor da Chuva e da Noite. Pego de surpresa, o reino de Araluen se vê diante de uma guerra. Enviado em uma missão perigosa para impedir o confronto, o jovem arqueiro Will parte acompanhado do grande amigo e espadachim Horace e o do habilidoso Gilan. "
+    },
+    {
+        "name": "Rangers Ordem dos Arqueiros - Terra do Gelo",
+        "original_name": "The Ranger's Apprentice: The Icebound Land",
+        "release_date": "2005-11-30",
+        "url": "/images/books/rangers-3.jpg",
+        "backdrop_url": "/images/backdrop-books/rangers.jpg",
+        "author": "John Flanagan",
+        "genre": "Fantasia e Ficção",
+        "sinopse": "Após a dura batalha com Lorde Morgarath, Will e a recém aliada Evanlyn são capturados e levados para a Terra do Gelo, Escandinávia. Halt promete fazer tudo para resgatar o seu jovem aprendiz - até mesmo desafiar o seu próprio Rei! Como consequência, é expulso de Araluen durante um ano e da corporação de arqueiros, Mas Halt não desiste do seu propósito e, juntamente com Horace que recebe autorização para ir com Halt, inicia uma longa e difícil viagem até Escandinávia para salvar Will."
+    },
+    {
+        "name": "Rangers Ordem dos Arqueiros - Folha de Carvalho",
+        "original_name": "The Ranger's Apprentice: Oakleaf Bearers",
+        "release_date": "2006-05-01",
+        "url": "/images/books/rangers-4.jpg",
+        "backdrop_url": "/images/backdrop-books/rangers.jpg",
+        "author": "John Flanagan",
+        "genre": "Fantasia e Ficção",
+        "sinopse": "Depois de semanas de muito frio e comida escassa, Will vislumbra a primeira chance de continuar com sua fuga. Quando Will parte em busca de uma jovem princesa, reencontra Halt e Horace. Juntos, eles descobrem os planos dos Temujai, um povo guerreiro das estepes do leste, que havia reunido um poderoso exército invasor no intuito de dominar a Escandinávia. Halt percebe que a invasão do reino gelado representa somente o inicio da investida dos Temujai, que, certamente, logo se lançariam contra Araluen. Por isso, ele decide oferecer ajuda aos Escandinavos."
+    },
+    {
+        "name": "Rangers Ordem dos Arqueiros - ",
+        "original_name": "The Ranger's Apprentice: ",
+        "release_date": "2021-09-14",
+        "url": "/images/books/rangers-2.jpg",
+        "backdrop_url": "/images/backdrop-books/rangers.jpg",
+        "author": "John Flanagan",
+        "genre": "Fantasia e Ficção",
+        "sinopse": ""
     }
 ]
